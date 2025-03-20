@@ -89,7 +89,6 @@ h1 {
 
 h2 {
 	color: #00acea;
-	font-family: "Agency FB";
 	font-size: 2.5em;
 	text-shadow: 4px 4px 0 #fedb41;
 }
@@ -114,16 +113,20 @@ h3 {
 
 header a,
 header a:visited {
-	font-family: Arial, sans-serif;
-	color: #fedb41;
+	color: #fef5cc;
 	text-decoration: none;
+}
+
+header>a,
+header>a:visited {
+	font-family: Arial, sans-serif;
 	min-height: 32px;
 	line-height: 32px;
 	margin-block-start: 4px;
 	margin-inline-end: 4px;
 }
 
-header a:hover {
+header>a:hover {
 	text-decoration: none;
 }
 
@@ -325,15 +328,6 @@ footer a:hover {
 
 	header {
 		background-color: #011b31;
-	}
-
-	header a,
-	header a:visited {
-		color: #011b31;
-	}
-
-	header a:hover {
-		color: #00acea;
 	}
 
 	main,
