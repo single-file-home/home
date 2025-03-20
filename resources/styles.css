@@ -275,7 +275,7 @@ video::-webkit-media-controls-enclosure {
 
 	.download-section:nth-child(3),
 	.download-section:nth-child(4) {
-		grid-template-rows: 1.5fr 1fr;
+		grid-template-rows: 5em 1fr;
 	}
 }
 
@@ -286,7 +286,7 @@ video::-webkit-media-controls-enclosure {
 	}
 
 	.download-section:nth-child(2) {
-		grid-template-rows: 1.5fr 1fr;
+		grid-template-rows: 5em 1fr;
 	}
 }
 
