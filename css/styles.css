@@ -11,6 +11,13 @@
 	font-display: block;
 }
 
+@font-face {
+	font-family: "Montserrat";
+	src: url(../resources/montserrat_semi_bold.ttf) format("truetype");
+	font-display: block;
+	font-weight: 600;
+}
+
 body {
 	font-family: "Montserrat", Arial, sans-serif;
 	background-color: #ffe675;
@@ -172,6 +179,7 @@ video {
 	display: inline-block;
 	word-break: keep-all;
 	align-content: center;
+	font-weight: bold;
 	color: #fef5cc;
 	background-color: #00acea;
 	text-decoration: none;
@@ -242,23 +250,23 @@ footer a:hover {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	.download-section:nth-child(1),
-	.download-section:nth-child(2) {
-		grid-template-rows: repeat(2, 1fr);
-	}
-}
-
-@media (max-width: 600px) {
-	.download-panel {
-		grid-template-columns: 1fr;
-	}
-
+	.download-section:nth-child(3),
 	.download-section:nth-child(4) {
 		grid-template-rows: repeat(2, 1fr);
 	}
 }
 
-@media (max-width: 380px) {
+@media (max-width: 640px) {
+	.download-panel {
+		grid-template-columns: 1fr;
+	}
+
+	.download-section:nth-child(2) {
+		grid-template-rows: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 320px) {
 	header section {
 		flex-direction: column;
 		gap: 4px;
@@ -266,7 +274,9 @@ footer a:hover {
 }
 
 @media (prefers-color-scheme: dark) {
-	html, body {
+
+	html,
+	body {
 		background-color: #011b31;
 		color: #fef5cc;
 	}
