@@ -109,13 +109,13 @@ h2 {
 h2 a,
 h2 a:visited {
 	color: #fedb41;
-	text-shadow: 1px 1px 0 #00acea, -1px -1px 0 #00acea, 1px -1px 0 #00acea, -1px 1px 0 #00acea;
+	text-shadow: 1px 1px 0 #00acea, -1px -1px 0 #00acea, 1px -1px 0 #00acea, -1px 1px 0 #00acea, 4px 4px 0 #fedb41;
 }
 
 h2 a:hover {
 	text-decoration: none;
 	color: #00acea;
-	text-shadow: none;
+	text-shadow: 4px 4px 0 #fedb41;
 }
 
 main,
