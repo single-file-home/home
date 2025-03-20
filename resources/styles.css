@@ -369,14 +369,10 @@ video::-webkit-media-controls-enclosure {
 
 	.btn,
 	.btn:visited {
-		color: #fef5cc;
-		background-color: #00acea;
 		box-shadow: 5px 5px 0 rgba(128, 128, 128, 0.25);
 	}
 
 	.btn:hover {
-		color: #011b31;
-		background-color: #00efd1;
 		box-shadow: 5px 5px 0 rgba(128, 128, 128, 0.5);
 	}
 
