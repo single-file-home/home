@@ -197,7 +197,7 @@ video {
 	text-decoration: none;
 	padding: 10px;
 	box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
-	transition: transform 0.1s;
+	transition: transform 0.1s, box-shadow 0.1s;
 	text-shadow: 1px 1px 0 #083863, -1px -1px 0 #083863, 1px -1px 0 #083863, -1px 1px 0 #083863;
 }
 
