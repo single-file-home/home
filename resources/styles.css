@@ -190,6 +190,7 @@ video {
 	word-break: keep-all;
 	align-content: center;
 	font-weight: bold;
+	min-height: 2.5em;
 	color: #fef5cc;
 	background-color: #00acea;
 	text-decoration: none;
