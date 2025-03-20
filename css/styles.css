@@ -164,7 +164,7 @@ video {
 .download-section h3 {
 	font-family: "Agency FB";
 	font-size: 1.5rem;
-	color: #001e38;
+	color: #083863;
 }
 
 .btn,
@@ -198,12 +198,12 @@ video {
 footer {
 	text-align: center;
 	font-size: 0.9rem;
-	color: #001e38
+	color: #083863
 }
 
 footer a,
 footer a:visited {
-	color: #001e38;
+	color: #083863;
 	text-decoration: none;
 }
 
