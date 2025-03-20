@@ -253,7 +253,7 @@ footer a:hover {
 
 	.download-section:nth-child(3),
 	.download-section:nth-child(4) {
-		grid-template-rows: repeat(2, 1fr);
+		grid-template-rows: 1.5fr 1fr;
 	}
 }
 
@@ -263,7 +263,7 @@ footer a:hover {
 	}
 
 	.download-section:nth-child(2) {
-		grid-template-rows: repeat(2, 1fr);
+		grid-template-rows: 1.5fr 1fr;
 	}
 }
 
