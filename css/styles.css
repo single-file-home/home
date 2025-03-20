@@ -136,12 +136,12 @@ footer {
 }
 
 video {
-	align-self: center;
 	width: 100%;
 	height: auto;
 	max-width: 882px;
 	max-height: 588px;
 	object-fit: cover;
+	margin: 10px;
 }
 
 .download-panel {
@@ -209,6 +209,12 @@ footer a:visited {
 
 footer a:hover {
 	text-decoration: underline;
+}
+
+@media (max-width: 1920px) {
+	video {
+		align-self: center;
+	}
 }
 
 @media (max-width: 1280px) {
