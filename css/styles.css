@@ -49,6 +49,9 @@ hr {
 }
 
 header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	background-color: #083863;
 	color: #fef5cc;
 }
@@ -86,19 +89,13 @@ header a:hover {
 	text-decoration: none;
 }
 
-header section {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-header section img {
+header img {
 	width: 32px;
 	height: 32px;
 	padding-right: 10px;
 }
 
-header section span {
+header span {
 	margin-block-start: 4px;
 }
 
@@ -263,7 +260,7 @@ footer a:visited {
 }
 
 @media (max-width: 320px) {
-	header section {
+	header {
 		flex-direction: column;
 		gap: 4px;
 	}
