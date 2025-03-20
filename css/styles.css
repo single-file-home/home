@@ -74,6 +74,7 @@ header a:visited {
 	color: #fedb41;
 	text-decoration: none;
 	min-height: 32px;
+	line-height: 32px;
 	margin-block-start: 4px;
 	margin-inline-end: 4px;
 }
