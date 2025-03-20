@@ -93,6 +93,11 @@ h2 {
 	text-shadow: 4px 4px 0 #fedb41;
 }
 
+h3 {
+	font-size: 1.8em;
+	color: #083863;
+}
+
 h2 a,
 h2 a:visited {
 	color: #fedb41;
@@ -104,11 +109,6 @@ h2 a:hover {
 	color: #00acea;
 	text-decoration: none;
 	text-shadow: 4px 4px 0 #fedb41;
-}
-
-h3 {
-	font-size: 1.8em;
-	color: #083863;
 }
 
 header a,
@@ -311,6 +311,10 @@ footer a:hover {
 		text-shadow: 4px 4px 0 #011b31;
 	}
 
+	h3 {
+		color: #fedb41;
+	}
+
 	h2 a,
 	h2 a:visited {
 		color: #083863;
@@ -320,10 +324,6 @@ footer a:hover {
 	h2 a:hover {
 		color: #fedb41;
 		text-shadow: 4px 4px 0 #011b31;
-	}
-
-	h3 {
-		color: #fedb41;
 	}
 
 	header {
