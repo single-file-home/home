@@ -1,19 +1,19 @@
 @font-face {
 	font-family: "Agency FB";
-	src: url(../resources/agencyfb_bold.ttf) format("truetype");
+	src: url(agencyfb_bold.ttf) format("truetype");
 	font-weight: bold;
 	font-display: block;
 }
 
 @font-face {
 	font-family: "Montserrat";
-	src: url(../resources/montserrat_reg.ttf) format("truetype");
+	src: url(montserrat_reg.ttf) format("truetype");
 	font-display: block;
 }
 
 @font-face {
 	font-family: "Montserrat";
-	src: url(../resources/montserrat_semi_bold.ttf) format("truetype");
+	src: url(montserrat_semi_bold.ttf) format("truetype");
 	font-display: block;
 	font-weight: 600;
 }
