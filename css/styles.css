@@ -28,11 +28,7 @@ body {
 
 a,
 a:visited {
-	color: #00acea;
-	text-decoration: none;
-}
-
-a:hover {
+	color: #083863;
 	text-decoration: underline;
 }
 
@@ -68,7 +64,7 @@ footer {
 	margin-inline-end: auto;
 }
 
-header h1 {
+h1 {
 	font-family: "Agency FB";
 	font-size: 1.7em;
 	margin: 0;
@@ -109,19 +105,20 @@ header section span {
 h2 {
 	color: #00acea;
 	font-family: "Agency FB";
-	font-size: 2.5rem;
+	font-size: 2.5em;
 	text-shadow: 4px 4px 0 #fedb41;
 }
 
 h2 a,
 h2 a:visited {
 	color: #fedb41;
+	text-decoration: none;
 	text-shadow: 1px 1px 0 #00acea, -1px -1px 0 #00acea, 1px -1px 0 #00acea, -1px 1px 0 #00acea, 4px 4px 0 #fedb41;
 }
 
 h2 a:hover {
-	text-decoration: none;
 	color: #00acea;
+	text-decoration: none;
 	text-shadow: 4px 4px 0 #fedb41;
 }
 
@@ -168,9 +165,9 @@ video {
 	padding: 10px;
 }
 
-.download-section h3 {
+h3 {
 	font-family: "Agency FB";
-	font-size: 1.5rem;
+	font-size: 1.8em;
 	color: #083863;
 }
 
@@ -186,6 +183,7 @@ video {
 	padding: 10px;
 	box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
 	transition: transform 0.1s;
+	text-shadow: 1px 1px 0 #083863, -1px -1px 0 #083863, 1px -1px 0 #083863, -1px 1px 0 #083863;
 }
 
 .btn:hover {
@@ -193,6 +191,7 @@ video {
 	background-color: #00efd1;
 	text-decoration: none;
 	box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.25);
+	text-shadow: none;
 }
 
 .btn:active {
@@ -206,18 +205,14 @@ video {
 
 footer {
 	text-align: center;
-	font-size: 0.9rem;
-	line-height: 1.3rem;
+	font-size: 0.9em;
+	line-height: 1.3em;
 	color: #083863
 }
 
 footer a,
 footer a:visited {
 	color: #083863;
-	text-decoration: none;
-}
-
-footer a:hover {
 	text-decoration: underline;
 }
 
@@ -284,6 +279,10 @@ footer a:hover {
 
 	a,
 	a:visited {
+		color: #fef5cc;
+	}
+
+	a:hover {
 		color: #00acea;
 	}
 
@@ -308,11 +307,13 @@ footer a:hover {
 	h2 a,
 	h2 a:visited {
 		color: #083863;
+		text-decoration: none;
 		text-shadow: 1px 1px 0 #fedb41, -1px -1px 0 #fedb41, 1px -1px 0 #fedb41, -1px 1px 0 #fedb41, 4px 4px 0 #011b31;
 	}
 
 	h2 a:hover {
 		color: #fedb41;
+		text-decoration: none;
 		text-shadow: 4px 4px 0 #011b31;
 	}
 
@@ -335,7 +336,7 @@ footer a:hover {
 		background-color: #011b31;
 	}
 
-	.download-section h3 {
+	h3 {
 		color: #fedb41;
 	}
 
@@ -362,7 +363,7 @@ footer a:hover {
 	}
 
 	footer a:hover {
-		color: #fef5cc;
+		color: #00acea;
 	}
 
 	@media (max-width: 1280px) {
