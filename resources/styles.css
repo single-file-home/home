@@ -353,16 +353,6 @@ video::-webkit-media-controls-enclosure {
 		background-color: #083863;
 	}
 
-	main section {
-		padding-inline: 10px;
-		padding-block-end: 20px;
-	}
-
-	main section p,
-	footer {
-		letter-spacing: -0.025em;
-	}
-
 	.download-section {
 		background-color: #011b31;
 	}
