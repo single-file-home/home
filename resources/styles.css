@@ -232,6 +232,14 @@ footer a:hover {
 	color: #00acea;
 }
 
+video::-webkit-media-controls {
+	visibility: hidden;
+}
+
+video::-webkit-media-controls-enclosure {
+	visibility: visible;
+}
+
 @media (max-width: 1920px) {
 	video {
 		align-self: center;
