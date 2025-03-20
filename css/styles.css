@@ -1,0 +1,257 @@
+@font-face {
+	font-family: "Agency FB";
+	src: url(../resources/agencyfb_bold.ttf) format("truetype");
+	font-weight: bold;
+	font-display: block;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url(../resources/montserrat_reg.ttf) format("truetype");
+	font-display: block;
+}
+
+body {
+	font-family: "Montserrat", Arial, sans-serif;
+	background-color: #ffe675;
+	color: #083863;
+	margin: 0;
+	font-size: 16px;
+}
+
+a,
+a:visited {
+	color: #00acea;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p,
+li {
+	margin-block-start: 5px;
+	margin-block-end: 5px;
+	line-height: 1.5em;
+}
+
+ul {
+	margin: 0;
+}
+
+hr {
+	border-style: solid;
+	border-color: #fedb41;
+}
+
+header {
+	background-color: #083863;
+	color: #fef5cc;
+}
+
+header,
+main,
+footer {
+	padding: 10px;
+	margin: 10px;
+	width: 60%;
+	min-width: 1200px;
+	margin-inline-start: auto;
+	margin-inline-end: auto;
+}
+
+header h1 {
+	font-family: "Agency FB";
+	font-size: 1.7em;
+	margin: 0;
+	flex: 1;
+}
+
+header a,
+header a:visited {
+	font-family: Arial, sans-serif;
+	color: #fedb41;
+	text-decoration: none;
+	min-height: 32px;
+	margin-block-start: 4px;
+	margin-inline-end: 4px;
+}
+
+header a:hover {
+	text-decoration: none;
+}
+
+header section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header section img {
+	width: 32px;
+	height: 32px;
+	padding-right: 10px;
+}
+
+header section span {
+	margin-block-start: 4px;
+}
+
+h2 {
+	color: #00acea;
+	font-family: "Agency FB";
+	font-size: 2rem;
+	text-shadow: 2px 2px 0 #fedb41;
+}
+
+h2 a,
+h2 a:visited {
+	color: #fedb41;
+	text-shadow: 1px 1px 0 #00acea, -1px -1px 0 #00acea, 1px -1px 0 #00acea, -1px 1px 0 #00acea;
+}
+
+h2 a:hover {
+	text-decoration: none;
+	color: #00acea;
+	text-shadow: none;
+}
+
+main,
+footer {
+	background-color: #fff1b2;
+}
+
+main section {
+	display: flex;
+	flex-direction: column;
+	padding-inline: 10px;
+	padding-block-end: 20px;
+}
+
+main section p,
+footer {
+	letter-spacing: -0.025em;
+}
+
+video {
+	align-self: center;
+	width: 100%;
+	height: auto;
+	max-width: 882px;
+	max-height: 588px;
+	object-fit: cover;
+}
+
+.download-panel {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+}
+
+.download-section {
+	display: grid;
+	grid-template-columns: subgrid;
+	grid-template-rows: repeat(3, 1fr);
+	gap: 10px;
+	background-color: #fedb41;
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+}
+
+.download-section h3 {
+	font-family: "Agency FB";
+	font-size: 1.5rem;
+	color: #001e38;
+}
+
+.btn,
+.btn:visited {
+	display: inline-block;
+	word-break: keep-all;
+	align-content: center;
+	color: #fef5cc;
+	background-color: #083863;
+	text-decoration: none;
+	padding: 10px;
+	box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+	transition: transform 0.1s;
+}
+
+.btn:hover {
+	background-color: #00acea;
+	text-decoration: none;
+	box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn:active {
+	box-shadow: none;
+	transform: translate(5px, 5px);
+}
+
+#download ul {
+	padding: 0;
+}
+
+footer {
+	text-align: center;
+	font-size: 0.9rem;
+	color: #001e38
+}
+
+footer a,
+footer a:visited {
+	color: #001e38;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 1280px) {
+	body {
+		background-color: #fff1b2;
+	}
+
+	header,
+	main,
+	footer {
+		width: auto;
+		min-width: auto;
+		margin: 0;
+	}
+
+	footer {
+		margin-block-start: 20px;
+		background-color: #ffe675;
+	}
+}
+
+@media (max-width: 800px) {
+	.download-panel {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.download-section:nth-child(1),
+	.download-section:nth-child(2) {
+		grid-template-rows: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 600px) {
+	.download-panel {
+		grid-template-columns: 1fr;
+	}
+
+	.download-section:nth-child(4) {
+		grid-template-rows: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 380px) {
+	header section {
+		flex-direction: column;
+	}
+}
