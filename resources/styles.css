@@ -28,6 +28,7 @@ body {
 	font-family: "Montserrat", Arial, sans-serif;
 	margin: 0;
 	font-size: 16px;
+	min-width: 260px;
 }
 
 a,
@@ -220,7 +221,7 @@ video {
 footer {
 	text-align: center;
 	font-size: 0.9em;
-	line-height: 1.3em;
+	line-height: 1.5em;
 	color: #083863
 }
 
