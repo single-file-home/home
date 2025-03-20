@@ -367,6 +367,10 @@ video::-webkit-media-controls-enclosure {
 		box-shadow: 5px 5px 0 rgba(128, 128, 128, 0.5);
 	}
 
+	.btn:active {
+		box-shadow: none;
+	}
+
 	footer {
 		color: #fef5cc;
 	}
