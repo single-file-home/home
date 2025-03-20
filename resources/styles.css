@@ -292,6 +292,14 @@ video::-webkit-media-controls-enclosure {
 
 @media (max-width: 320px) {
 
+	h2 {
+		font-size: 2em;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+
 	header {
 		flex-direction: column;
 		gap: 4px;
