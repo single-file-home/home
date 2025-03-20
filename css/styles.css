@@ -264,3 +264,103 @@ footer a:hover {
 		gap: 4px;
 	}
 }
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #011b31;
+		color: #fef5cc;
+	}
+
+	a,
+	a:visited {
+		color: #00acea;
+	}
+
+	header {
+		background-color: #011b31;
+	}
+
+	header a,
+	header a:visited {
+		color: #011b31;
+	}
+
+	header a:hover {
+		color: #00acea;
+	}
+
+	h2 {
+		color: #fedb41;
+		text-shadow: 4px 4px 0 #011b31;
+	}
+
+	h2 a,
+	h2 a:visited {
+		color: #083863;
+		text-shadow: 1px 1px 0 #fedb41, -1px -1px 0 #fedb41, 1px -1px 0 #fedb41, -1px 1px 0 #fedb41, 4px 4px 0 #011b31;
+	}
+
+	h2 a:hover {
+		color: #fedb41;
+		text-shadow: 4px 4px 0 #011b31;
+	}
+
+	main,
+	footer {
+		background-color: #083863;
+	}
+
+	main section {
+		padding-inline: 10px;
+		padding-block-end: 20px;
+	}
+
+	main section p,
+	footer {
+		letter-spacing: -0.025em;
+	}
+
+	.download-section {
+		background-color: #011b31;
+	}
+
+	.download-section h3 {
+		color: #fedb41;
+	}
+
+	.btn,
+	.btn:visited {
+		color: #fef5cc;
+		background-color: #00acea;
+		box-shadow: 5px 5px 0 rgba(128, 128, 128, 0.25);
+	}
+
+	.btn:hover {
+		color: #011b31;
+		background-color: #00efd1;
+		box-shadow: 5px 5px 0 rgba(128, 128, 128, 0.5);
+	}
+
+	footer {
+		color: #fef5cc;
+	}
+
+	footer a,
+	footer a:visited {
+		color: #fef5cc;
+	}
+
+	footer a:hover {
+		color: #fef5cc;
+	}
+
+	@media (max-width: 1280px) {
+		body {
+			background-color: #083863;
+		}
+
+		footer {
+			background-color: #011b31;
+		}
+	}
+}
