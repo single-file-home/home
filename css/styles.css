@@ -266,7 +266,7 @@ footer a:hover {
 }
 
 @media (prefers-color-scheme: dark) {
-	body {
+	html, body {
 		background-color: #011b31;
 		color: #fef5cc;
 	}
