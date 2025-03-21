@@ -2,17 +2,19 @@ const CLASS_DARK = "dark-theme";
 const CLASS_LIGHT = "light-theme";
 const STYLE_TRANSFORM_ICON_DARK = "rotate(180deg) translateY(1px)";
 const STYLE_TRANSFORM_ICON_LIGHT = "translateY(-1px)";
-const icon = document.querySelector("svg");
+const themeButton = document.querySelector("svg");
 const documentElement = document.documentElement;
-documentElement.className = matchMedia("(prefers-color-scheme: dark)").matches ? CLASS_DARK : CLASS_LIGHT;
-icon.style.transform = documentElement.className === CLASS_DARK ? STYLE_TRANSFORM_ICON_DARK : STYLE_TRANSFORM_ICON_LIGHT;
-icon.addEventListener("click", () => {
-    const darkThemeSelected = documentElement.className === CLASS_DARK;
-    documentElement.className = darkThemeSelected ? CLASS_LIGHT : CLASS_DARK;
-    icon.style.transform = darkThemeSelected ? STYLE_TRANSFORM_ICON_LIGHT : STYLE_TRANSFORM_ICON_DARK;
-});
-icon.style.display = "";
+const darkModeQuery = matchMedia("(prefers-color-scheme: dark)");
+themeButton.addEventListener("click", () => setTheme(documentElement.className != CLASS_DARK));
+darkModeQuery.addEventListener("change", event => setTheme(event.matches));
+setTheme(darkModeQuery.matches);
+themeButton.style.display = "";
 document.currentScript.remove();
+
+function setTheme(darkThemeSelected) {
+    documentElement.className = darkThemeSelected ? CLASS_DARK : CLASS_LIGHT;
+    themeButton.style.transform = darkThemeSelected ? STYLE_TRANSFORM_ICON_DARK : STYLE_TRANSFORM_ICON_LIGHT;
+}
 
 // https://buttons.github.io/buttons.js
 /*!
