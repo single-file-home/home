@@ -139,7 +139,7 @@ header img {
 
 header>span {
 	display: flex;
-	align-items: center;
+	align-items: baseline;
 	margin-block-start: 4px;
 	max-height: 32px;
 }
