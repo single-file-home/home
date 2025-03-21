@@ -1,21 +1,21 @@
 @font-face {
 	font-family: "Agency FB";
-	src: url(agencyfb_bold.ttf) format("truetype");
 	font-weight: bold;
 	font-display: block;
+	src: url(agencyfb_bold.ttf) format("truetype");
 }
 
 @font-face {
 	font-family: "Montserrat";
-	src: url(montserrat_reg.ttf) format("truetype");
 	font-display: block;
+	src: url(montserrat_reg.ttf) format("truetype");
 }
 
 @font-face {
 	font-family: "Montserrat";
-	src: url(montserrat_semi_bold.ttf) format("truetype");
 	font-display: block;
 	font-weight: 600;
+	src: url(montserrat_semi_bold.ttf) format("truetype");
 }
 
 html,
@@ -26,8 +26,8 @@ body {
 
 body {
 	font-family: "Montserrat", Arial, sans-serif;
-	margin: 0;
 	font-size: 16px;
+	margin: 0;
 	min-width: 260px;
 }
 
@@ -64,14 +64,14 @@ h3 {
 }
 
 h1 {
+	flex: 1;
 	font-size: 1.7em;
 	margin: 0;
-	flex: 1;
 }
 
 h2 {
-	color: var(--title-color);
 	font-size: 2.5em;
+	color: var(--title-color);
 	text-shadow: 4px 4px 0 var(--bg-download-color);
 }
 
@@ -97,8 +97,8 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: var(--bg-header-color);
 	color: var(--header-color);
+	background-color: var(--bg-header-color);
 }
 
 header,
@@ -204,9 +204,9 @@ video {
 .btn,
 .btn:visited {
 	display: inline-block;
+	font-weight: bold;
 	word-break: keep-all;
 	align-content: center;
-	font-weight: bold;
 	min-height: 2.5em;
 	color: var(--button-color);
 	background-color: var(--bg-button-color);
@@ -235,8 +235,8 @@ video {
 }
 
 footer {
-	text-align: center;
 	font-size: 0.9em;
+	text-align: center;
 	line-height: 1.5em;
 	color: var(--color);
 }
