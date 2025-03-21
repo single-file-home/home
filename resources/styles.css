@@ -148,6 +148,7 @@ header>span {
 
 header>span span {
 	margin-inline-start: 10px;
+	line-height: initial;
 }
 
 header svg {
