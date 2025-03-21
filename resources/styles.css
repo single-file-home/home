@@ -20,8 +20,8 @@
 
 html,
 body {
-	background-color: #ffe675;
-	color: #083863;
+	background-color: var(--bg-color);
+	color: var(--color);
 }
 
 body {
@@ -33,12 +33,12 @@ body {
 
 a,
 a:visited {
-	color: #083863;
+	color: var(--color);
 	text-decoration: underline;
 }
 
 a:hover {
-	color: #00acea;
+	color: var(--link-color);
 }
 
 p,
@@ -54,26 +54,7 @@ ul {
 
 hr {
 	border-style: solid;
-	border-color: #fedb41;
-}
-
-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #083863;
-	color: #fef5cc;
-}
-
-header,
-main,
-footer {
-	padding: 10px;
-	margin: 10px;
-	width: 60%;
-	min-width: 1200px;
-	margin-inline-start: auto;
-	margin-inline-end: auto;
+	border-color: var(--section-separator-color);
 }
 
 h1,
@@ -89,32 +70,51 @@ h1 {
 }
 
 h2 {
-	color: #00acea;
+	color: var(--title-color);
 	font-size: 2.5em;
-	text-shadow: 4px 4px 0 #fedb41;
+	text-shadow: 4px 4px 0 var(--bg-download-color);
 }
 
 h3 {
 	font-size: 1.8em;
-	color: #083863;
+	color: var(--download-title-color);
 }
 
 h2 a,
 h2 a:visited {
-	color: #fedb41;
+	color: var(--bg-download-color);
 	text-decoration: none;
-	text-shadow: 1px 1px 0 #00acea, -1px -1px 0 #00acea, 1px -1px 0 #00acea, -1px 1px 0 #00acea, 4px 4px 0 #fedb41;
+	text-shadow: 1px 1px 0 var(--title-color), -1px -1px 0 var(--title-color), 1px -1px 0 var(--title-color), -1px 1px 0 var(--title-color), 4px 4px 0 var(--bg-download-color);
 }
 
 h2 a:hover {
-	color: #00acea;
+	color: var(--title-color);
 	text-decoration: none;
-	text-shadow: 4px 4px 0 #fedb41;
+	text-shadow: 4px 4px 0 var(--bg-download-color);
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--bg-header-color);
+	color: var(--header-color);
+}
+
+header,
+main,
+footer {
+	padding: 10px;
+	margin: 10px;
+	width: 60%;
+	min-width: 1200px;
+	margin-inline-start: auto;
+	margin-inline-end: auto;
 }
 
 header a,
 header a:visited {
-	color: #fef5cc;
+	color: var(--header-color);
 	text-decoration: none;
 }
 
@@ -134,17 +134,30 @@ header>a:hover {
 header img {
 	width: 32px;
 	height: 32px;
-	padding-right: 10px;
+	padding-inline-end: 10px;
 }
 
-header span {
+header>span {
+	display: flex;
+	align-items: center;
 	margin-block-start: 4px;
 	max-height: 32px;
 }
 
+header>span span {
+	margin-inline-start: 10px;
+}
+
+header svg {
+	cursor: pointer;
+	user-select: none;
+	width: 24px;
+	height: 24px;
+}
+
 main,
 footer {
-	background-color: #fff1b2;
+	background-color: var(--bg-main-color);
 }
 
 main section {
@@ -179,7 +192,7 @@ video {
 	grid-template-columns: subgrid;
 	grid-template-rows: 1.5fr repeat(2, 1fr);
 	gap: 10px;
-	background-color: #fedb41;
+	background-color: var(--bg-download-color);
 	text-align: center;
 	margin: 10px;
 	padding: 10px;
@@ -192,20 +205,19 @@ video {
 	align-content: center;
 	font-weight: bold;
 	min-height: 2.5em;
-	color: #fef5cc;
-	background-color: #00acea;
+	color: var(--button-color);
+	background-color: var(--bg-button-color);
 	text-decoration: none;
 	padding: 10px;
-	box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px 0 var(--shadow-button-color);
 	transition: transform 0.1s, box-shadow 0.1s;
-	text-shadow: 1px 1px 0 #083863, -1px -1px 0 #083863, 1px -1px 0 #083863, -1px 1px 0 #083863;
 }
 
 .btn:hover {
-	color: #083863;
-	background-color: #00efd1;
+	color: var(--hover-button-color);
+	background-color: var(--bg-hover-button-color);
 	text-decoration: none;
-	box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.25);
+	box-shadow: 5px 5px 0 var(--hover-shadow-button-color);
 	text-shadow: none;
 }
 
@@ -223,16 +235,16 @@ footer {
 	text-align: center;
 	font-size: 0.9em;
 	line-height: 1.5em;
-	color: #083863
+	color: var(--color);
 }
 
 footer a,
 footer a:visited {
-	color: #083863;
+	color: var(--color);
 }
 
 footer a:hover {
-	color: #00acea;
+	color: var(--link-color);
 }
 
 video::-webkit-media-controls {
@@ -253,7 +265,7 @@ video::-webkit-media-controls-enclosure {
 
 	html,
 	body {
-		background-color: #fff1b2;
+		background-color: var(--bg-main-color);
 	}
 
 	header,
@@ -266,7 +278,7 @@ video::-webkit-media-controls-enclosure {
 
 	footer {
 		margin-block-start: 20px;
-		background-color: #ffe675;
+		background-color: var(--bg-color);
 	}
 }
 
@@ -309,91 +321,40 @@ video::-webkit-media-controls-enclosure {
 	}
 }
 
+:root {
+	--bg-color: #ffe675;
+	--color: #083863;
+	--bg-header-color: #083863;
+	--header-color: #fef5cc;
+	--bg-main-color: #fff1b2;
+	--title-color: #00acea;
+	--section-separator-color: #fedb41;
+	--bg-download-color: #fedb41;
+	--download-title-color: #083863;
+	--bg-button-color: #00acea;
+	--button-color: #fef5cc;
+	--shadow-button-color: rgba(0, 0, 0, 0.5);
+	--hover-shadow-button-color: rgba(0, 0, 0, 0.25);
+	--bg-hover-button-color: #00efd1;
+	--hover-button-color: #083863;
+	--link-color: #00acea;
+}
+
 @media (prefers-color-scheme: dark) {
 
-	html,
-	body {
-		background-color: #011b31;
-		color: #fef5cc;
-	}
-
-	a,
-	a:visited {
-		color: #fef5cc;
-	}
-
-	a:hover {
-		color: #00acea;
-	}
-
-	h2 {
-		color: #fedb41;
-		text-shadow: 4px 4px 0 #011b31;
-	}
-
-	h3 {
-		color: #fedb41;
-	}
-
-	h2 a,
-	h2 a:visited {
-		color: #083863;
-		text-shadow: 1px 1px 0 #fedb41, -1px -1px 0 #fedb41, 1px -1px 0 #fedb41, -1px 1px 0 #fedb41, 4px 4px 0 #011b31;
-	}
-
-	h2 a:hover {
-		color: #fedb41;
-		text-shadow: 4px 4px 0 #011b31;
-	}
-
-	header {
-		background-color: #011b31;
-	}
-
-	main,
-	footer {
-		background-color: #083863;
-	}
-
-	.download-section {
-		background-color: #011b31;
-	}
-
-	.btn,
-	.btn:visited {
-		box-shadow: 5px 5px 0 rgba(128, 128, 128, 0.25);
-	}
-
-	.btn:hover {
-		box-shadow: 5px 5px 0 rgba(128, 128, 128, 0.5);
-	}
-
-	.btn:active {
-		box-shadow: none;
-	}
-
-	footer {
-		color: #fef5cc;
-	}
-
-	footer a,
-	footer a:visited {
-		color: #fef5cc;
-	}
-
-	footer a:hover {
-		color: #00acea;
-	}
-
-	@media (max-width: 1280px) {
-
-		html,
-		body {
-			background-color: #083863;
-		}
-
-		footer {
-			background-color: #011b31;
-		}
+	:root {
+		--bg-color: #011b31;
+		--color: #fef5cc;
+		--bg-header-color: #011b31;
+		--header-color: #fef5cc;
+		--bg-main-color: #083863;
+		--title-color: #fedb41;
+		--section-separator-color: #fedb41;
+		--bg-download-color: #011b31;
+		--download-title-color: #fedb41;
+		--button-color: #011b31;
+		--shadow-button-color: rgba(128, 128, 128, 0.25);
+		--hover-shadow-button-color: rgba(128, 128, 128, 0.5);
+		--hover-button-color: #011b31;
 	}
 }
