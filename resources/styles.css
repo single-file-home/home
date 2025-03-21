@@ -324,21 +324,6 @@ video::-webkit-media-controls-enclosure {
 	}
 }
 
-.dark-theme {
-	--bg-color: #011b31;
-	--color: #fef5cc;
-	--bg-header-color: #011b31;
-	--header-color: #fef5cc;
-	--bg-main-color: #083863;
-	--title-color: #fedb41;
-	--section-separator-color: #fedb41;
-	--bg-download-color: #011b31;
-	--download-title-color: #fedb41;
-	--shadow-button-color: rgba(128, 128, 128, 0.25);
-	--hover-shadow-button-color: rgba(128, 128, 128, 0.5);
-	--hover-button-color: #011b31;
-}
-
 html, .light-theme {
 	--bg-color: #fef5cc;
 	--color: #083863;
@@ -356,6 +341,21 @@ html, .light-theme {
 	--bg-hover-button-color: #00efd1;
 	--hover-button-color: #083863;
 	--link-color: #00acea;
+}
+
+.dark-theme {
+	--bg-color: #011b31;
+	--color: #fef5cc;
+	--bg-header-color: #011b31;
+	--header-color: #fef5cc;
+	--bg-main-color: #083863;
+	--title-color: #fedb41;
+	--section-separator-color: #fedb41;
+	--bg-download-color: #011b31;
+	--download-title-color: #fedb41;
+	--shadow-button-color: rgba(128, 128, 128, 0.25);
+	--hover-shadow-button-color: rgba(128, 128, 128, 0.5);
+	--hover-button-color: #011b31;
 }
 
 @media (prefers-color-scheme: dark) {
