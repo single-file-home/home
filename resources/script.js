@@ -5,13 +5,13 @@ const STYLE_TRANSFORM_ICON_LIGHT = "translateY(-1px)";
 const icon = document.querySelector("svg");
 const documentElement = document.documentElement;
 documentElement.className = matchMedia("(prefers-color-scheme: dark)").matches ? CLASS_DARK : CLASS_LIGHT;
-icon.style.display = "";
 icon.style.transform = documentElement.className === CLASS_DARK ? STYLE_TRANSFORM_ICON_DARK : STYLE_TRANSFORM_ICON_LIGHT;
 icon.addEventListener("click", () => {
     const darkThemeSelected = documentElement.className === CLASS_DARK;
     documentElement.className = darkThemeSelected ? CLASS_LIGHT : CLASS_DARK;
     icon.style.transform = darkThemeSelected ? STYLE_TRANSFORM_ICON_LIGHT : STYLE_TRANSFORM_ICON_DARK;
 });
+icon.style.display = "";
 document.currentScript.remove();
 
 // https://buttons.github.io/buttons.js
