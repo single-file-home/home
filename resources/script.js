@@ -3,11 +3,14 @@ const CLASS_LIGHT = "light-theme";
 const STYLE_TRANSFORM_ICON_DARK = "rotate(180deg) translateY(1px)";
 const STYLE_TRANSFORM_ICON_LIGHT = "translateY(-1px)";
 const themeButton = document.querySelector("svg");
+const githubButton = document.querySelector(".github-button");
 const documentElement = document.documentElement;
 const darkModeQuery = matchMedia("(prefers-color-scheme: dark)");
 themeButton.addEventListener("click", () => setTheme(documentElement.className != CLASS_DARK));
 darkModeQuery.addEventListener("change", event => setTheme(event.matches));
 setTheme(darkModeQuery.matches);
+githubButton.style.display = "";
+githubButton.textContent = "Star";
 themeButton.style.display = "";
 document.currentScript.remove();
 
