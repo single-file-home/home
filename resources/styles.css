@@ -67,6 +67,7 @@ h1 {
 	flex: 1;
 	font-size: 1.7em;
 	margin: 0;
+	max-height: 32px;
 }
 
 h2 {
@@ -324,7 +325,8 @@ video::-webkit-media-controls-enclosure {
 	}
 }
 
-html, .light-theme {
+html,
+.light-theme {
 	--bg-color: #fef5cc;
 	--color: #083863;
 	--bg-header-color: #083863;
