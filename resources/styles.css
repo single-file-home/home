@@ -141,6 +141,8 @@ header>span {
 	display: flex;
 	align-items: baseline;
 	margin-block-start: 4px;
+	height: 32px;
+	line-height: 32px;
 	max-height: 32px;
 }
 
