@@ -327,11 +327,11 @@ video::-webkit-media-controls-enclosure {
 
 html,
 .light-theme {
-	--bg-color: #fef5cc;
+	--bg-color: #fff8d9;
 	--color: #083863;
 	--bg-header-color: #083863;
 	--header-color: #fef5cc;
-	--bg-main-color: #fff1b2;
+	--bg-main-color: #fff2b9;
 	--title-color: #00acea;
 	--section-separator-color: #fedb41;
 	--bg-download-color: #fedb41;
