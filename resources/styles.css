@@ -60,7 +60,7 @@ hr {
 h1,
 h2,
 h3 {
-	font-family: "Agency FB";
+	font-family: "Agency FB", sans-serif;
 }
 
 h1 {
@@ -72,6 +72,7 @@ h1 {
 
 h2 {
 	font-size: 2.5em;
+	line-height: 3rem;
 	color: var(--title-color);
 	text-shadow: 4px 4px 0 var(--bg-download-color);
 }
