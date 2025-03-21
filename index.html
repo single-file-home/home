@@ -6,10 +6,11 @@
 	<title>SingleFile – Save Web Pages, Simply</title>
 	<meta http-equiv="content-security-policy"
 		content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.github.com;">
+	<link rel="preload" href="resources/buttons.js" as="script" type="text/javascript">
 	<link rel="preload" href="resources/agencyfb_bold.ttf" as="font" type="font/ttf" crossorigin>
 	<link rel="preload" href="resources/montserrat_reg.ttf" as="font" type="font/ttf" crossorigin>
 	<link rel="preload" href="resources/montserrat_semi_bold.ttf" as="font" type="font/ttf" crossorigin>
-	<link rel="preload" href="resources/buttons.js" as="script" type="text/javascript">
+	<link rel="preconnect" href="https://api.github.com" crossorigin>
 	<link rel="icon" href="resources/logo-32x32.png" type="image/png" sizes="32x32">
 	<link rel="icon" href="resources/logo-48x48.png" type="image/png" sizes="48x48">
 	<link rel="stylesheet" href="resources/styles.css">
@@ -136,7 +137,7 @@
 		<section id="demo">
 			<h2><a href="#demo">#</a> Demo</h2>
 			<video controls poster="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" width="882"
-				height="588" preload="metadata">
+				height="588" preload="none">
 				<source src="resources/demo.mp4" type="video/mp4">
 				Your browser does not support the video tag.
 			</video>
