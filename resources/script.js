@@ -8,8 +8,8 @@
 
 const CLASS_DARK = "dark-theme";
 const CLASS_LIGHT = "light-theme";
-const STYLE_TRANSFORM_ICON_DARK = "rotate(180deg) translateY(-1px)";
-const STYLE_TRANSFORM_ICON_LIGHT = "translateY(-1px)";
+const STYLE_TRANSFORM_ICON_DARK = "rotate(180deg) translateY(1px)";
+const STYLE_TRANSFORM_ICON_LIGHT = "translateY(1px)";
 const icon = document.querySelector("svg");
 const documentElement = document.documentElement;
 documentElement.className = matchMedia("(prefers-color-scheme: dark)").matches ? CLASS_DARK : CLASS_LIGHT;
