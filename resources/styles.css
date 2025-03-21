@@ -321,23 +321,20 @@ video::-webkit-media-controls-enclosure {
 	}
 }
 
-:root {
-	--bg-color: #ffe675;
-	--color: #083863;
-	--bg-header-color: #083863;
+.dark-theme {
+	--bg-color: #011b31;
+	--color: #fef5cc;
+	--bg-header-color: #011b31;
 	--header-color: #fef5cc;
-	--bg-main-color: #fff1b2;
-	--title-color: #00acea;
+	--bg-main-color: #083863;
+	--title-color: #fedb41;
 	--section-separator-color: #fedb41;
-	--bg-download-color: #fedb41;
-	--download-title-color: #083863;
-	--bg-button-color: #00acea;
-	--button-color: #fef5cc;
-	--shadow-button-color: rgba(0, 0, 0, 0.5);
-	--hover-shadow-button-color: rgba(0, 0, 0, 0.25);
-	--bg-hover-button-color: #00efd1;
-	--hover-button-color: #083863;
-	--link-color: #00acea;
+	--bg-download-color: #011b31;
+	--download-title-color: #fedb41;
+	--button-color: #011b31;
+	--shadow-button-color: rgba(128, 128, 128, 0.25);
+	--hover-shadow-button-color: rgba(128, 128, 128, 0.5);
+	--hover-button-color: #011b31;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -357,4 +354,23 @@ video::-webkit-media-controls-enclosure {
 		--hover-shadow-button-color: rgba(128, 128, 128, 0.5);
 		--hover-button-color: #011b31;
 	}
+}
+
+html, .light-theme {
+	--bg-color: #ffe675;
+	--color: #083863;
+	--bg-header-color: #083863;
+	--header-color: #fef5cc;
+	--bg-main-color: #fff1b2;
+	--title-color: #00acea;
+	--section-separator-color: #fedb41;
+	--bg-download-color: #fedb41;
+	--download-title-color: #083863;
+	--bg-button-color: #00acea;
+	--button-color: #fef5cc;
+	--shadow-button-color: rgba(0, 0, 0, 0.5);
+	--hover-shadow-button-color: rgba(0, 0, 0, 0.25);
+	--bg-hover-button-color: #00efd1;
+	--hover-button-color: #083863;
+	--link-color: #00acea;
 }
