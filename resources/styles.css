@@ -28,7 +28,7 @@ body {
 	font-family: "Montserrat", Arial, sans-serif;
 	font-size: 16px;
 	margin: 0;
-	min-width: 260px;
+	min-width: 220px;
 }
 
 a,
@@ -66,7 +66,9 @@ h3 {
 h1 {
 	flex: 1;
 	font-size: 1.7em;
-	margin: 0;
+	margin-block: 0;
+	margin-inline-start: 0;
+	margin-inline-end: 10px;
 	max-height: 32px;
 }
 
@@ -97,7 +99,9 @@ h2 a:hover {
 
 header {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	row-gap: 10px;
+	justify-content: end;
 	align-items: center;
 	color: var(--header-color);
 	background-color: var(--bg-header-color);
@@ -319,11 +323,6 @@ video::-webkit-media-controls-enclosure {
 
 	h3 {
 		font-size: 1.5em;
-	}
-
-	header {
-		flex-direction: column;
-		gap: 10px;
 	}
 }
 
