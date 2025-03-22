@@ -186,6 +186,7 @@ video {
 	height: auto;
 	max-inline-size: 882px;
 	max-block-size: 588px;
+	aspect-ratio: 882 / 588;
 	object-fit: cover;
 	margin: 10px;
 }
