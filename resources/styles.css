@@ -118,8 +118,8 @@ header {
 	background-color: var(--bg-header-color);
 }
 
-header a,
-header a:visited {
+header h1 a,
+header h1 a:visited {
 	color: var(--header-color);
 	text-decoration: none;
 }
@@ -136,15 +136,18 @@ header>span {
 	height: 32px;
 	line-height: 32px;
 	max-block-size: 32px;
+	margin-inline-start: 10px;
 }
 
+/*
 header>span span {
 	margin-inline-start: 10px;
 	line-height: initial;
 	height: 28px;
 }
+*/
 
-header svg {
+header .theme-switcher-button {
 	cursor: pointer;
 	user-select: none;
 	width: 24px;
@@ -250,6 +253,130 @@ video::-webkit-media-controls {
 
 video::-webkit-media-controls-enclosure {
 	visibility: visible;
+}
+
+.github-widget {
+	display: inline-block;
+	overflow: hidden;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+	font-size: 0;
+	line-height: 0;
+	white-space: nowrap;
+	margin-inline-start: 10px;
+}
+
+.github-widget a {
+	color: #25292e;
+	text-decoration: none;
+	outline: 0
+}
+
+.github-btn,
+.github-widget .social-count {
+	position: relative;
+	display: inline-block;
+	display: inline-flex;
+	height: 14px;
+	padding: 2px 5px;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 14px;
+	vertical-align: bottom;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-repeat: repeat-x;
+	background-position: -1px -1px;
+	background-size: 110% 110%;
+	border: 1px solid
+}
+
+.github-btn {
+	border-radius: .25em
+}
+
+.github-btn:not(:last-child) {
+	border-radius: .25em 0 0 .25em
+}
+
+.github-widget .social-count {
+	border-left: 0;
+	border-radius: 0 .25em .25em 0
+}
+
+.github-btn,
+.github-widget .social-count {
+	height: 16px;
+	padding: 5px 10px;
+	font-size: 12px;
+	line-height: 16px
+}
+
+.github-widget .octicon {
+	display: inline-block;
+	vertical-align: text-top;
+	fill: black;
+	overflow: visible
+}
+
+.github-btn:focus-visible,
+.github-widget .social-count:focus-visible {
+	outline: 2px solid #0969da;
+	outline-offset: -2px
+}
+
+.github-btn {
+	color: #25292e;
+	background-color: #ebf0f4;
+	border-color: #d1d9e0;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23f6f8fa'/%3e%3cstop offset='90%25' stop-color='%23ebf0f4'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");
+	background-image: -moz-linear-gradient(top, #f6f8fa, #ebf0f4 90%);
+	background-image: linear-gradient(180deg, #f6f8fa, #ebf0f4 90%);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFF6F8FA', endColorstr='#FFEAEFF3')
+}
+
+github-widget .btn {
+	filter: none
+}
+
+.github-btn:hover,
+.github-btn:focus {
+	background-color: #e5eaee;
+	background-position: 0 -0.5em;
+	border-color: #d1d9e0;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23eff2f5'/%3e%3cstop offset='90%25' stop-color='%23e5eaee'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");
+	background-image: -moz-linear-gradient(top, #eff2f5, #e5eaee 90%);
+	background-image: linear-gradient(180deg, #eff2f5, #e5eaee 90%);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFEFF2F5', endColorstr='#FFE4E9ED')
+}
+
+.github-btn:hover,
+.github-btn:focus {
+	filter: none
+}
+
+.github-btn:active {
+	background-color: #e6eaef;
+	border-color: #d1d9e0;
+	background-image: none;
+	filter: none
+}
+
+.github-widget .social-count {
+	color: #25292e;
+	background-color: #fff;
+	border-color: #d1d9e0
+}
+
+.github-widget .social-count:hover,
+.github-widget .social-count:focus {
+	color: #0969da
+}
+
+.github-widget .octicon-heart {
+	color: #bf3989
 }
 
 @media (max-width: 1920px) {
