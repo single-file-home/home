@@ -7,6 +7,7 @@ const githubButton = document.querySelector(".github-button");
 const documentElement = document.documentElement;
 const darkModeQuery = matchMedia("(prefers-color-scheme: dark)");
 themeButton.addEventListener("click", () => setTheme(documentElement.className != CLASS_DARK));
+themeButton.addEventListener("keydown", event => event.key === "Enter" && setTheme(documentElement.className != CLASS_DARK));
 darkModeQuery.addEventListener("change", event => setTheme(event.matches));
 setTheme(darkModeQuery.matches);
 githubButton.style.display = "";
