@@ -28,7 +28,7 @@ body {
 	font-family: "Montserrat", Arial, sans-serif;
 	font-size: 16px;
 	margin: 0;
-	min-width: 220px;
+	min-inline-size: 220px;
 }
 
 a,
@@ -69,7 +69,7 @@ h1 {
 	margin-block: 0;
 	margin-inline-start: 0;
 	margin-inline-end: 10px;
-	max-height: 32px;
+	max-block-size: 32px;
 }
 
 h2 {
@@ -103,7 +103,7 @@ footer {
 	padding: 10px;
 	margin: 10px;
 	width: 60%;
-	min-width: 1200px;
+	min-inline-size: 1200px;
 	margin-inline-start: auto;
 	margin-inline-end: auto;
 }
@@ -135,7 +135,7 @@ header>span {
 	align-items: center;
 	height: 32px;
 	line-height: 32px;
-	max-height: 32px;
+	max-block-size: 32px;
 }
 
 header>span span {
@@ -171,8 +171,8 @@ footer {
 video {
 	width: 100%;
 	height: auto;
-	max-width: 882px;
-	max-height: 588px;
+	max-inline-size: 882px;
+	max-block-size: 588px;
 	object-fit: cover;
 	margin: 10px;
 }
@@ -201,7 +201,7 @@ video {
 	letter-spacing: -.05em;
 	word-break: keep-all;
 	align-content: center;
-	min-height: 2.5em;
+	min-block-size: 2.5em;
 	color: var(--button-color);
 	background-color: var(--bg-button-color);
 	text-decoration: none;
@@ -225,7 +225,7 @@ video {
 
 #download ul {
 	padding: 0;
-	max-width: 1280px;
+	max-inline-size: 1280px;
 }
 
 footer {
@@ -269,7 +269,7 @@ video::-webkit-media-controls-enclosure {
 	main,
 	footer {
 		width: auto;
-		min-width: auto;
+		min-inline-size: auto;
 		margin: 0;
 	}
 
