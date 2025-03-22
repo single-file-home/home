@@ -97,16 +97,6 @@ h2 a:hover {
 	text-shadow: 4px 4px 0 var(--bg-download-color);
 }
 
-header {
-	display: flex;
-	flex-wrap: wrap;
-	row-gap: 10px;
-	justify-content: end;
-	align-items: center;
-	color: var(--header-color);
-	background-color: var(--bg-header-color);
-}
-
 header,
 main,
 footer {
@@ -116,6 +106,16 @@ footer {
 	min-width: 1200px;
 	margin-inline-start: auto;
 	margin-inline-end: auto;
+}
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 10px;
+	justify-content: end;
+	align-items: center;
+	color: var(--header-color);
+	background-color: var(--bg-header-color);
 }
 
 header a,
@@ -129,7 +129,6 @@ header>a:visited {
 	font-family: Arial, sans-serif;
 	min-height: 32px;
 	line-height: 32px;
-	margin-block-start: 4px;
 	margin-inline-end: 4px;
 }
 
