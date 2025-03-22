@@ -139,14 +139,6 @@ header>span {
 	margin-inline-start: 10px;
 }
 
-/*
-header>span span {
-	margin-inline-start: 10px;
-	line-height: initial;
-	height: 28px;
-}
-*/
-
 header .theme-switcher-button {
 	cursor: pointer;
 	user-select: none;
@@ -337,7 +329,7 @@ video::-webkit-media-controls-enclosure {
 	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFF6F8FA', endColorstr='#FFEAEFF3')
 }
 
-github-widget .btn {
+github-widget .github-btn {
 	filter: none
 }
 
@@ -373,10 +365,6 @@ github-widget .btn {
 .github-widget .social-count:hover,
 .github-widget .social-count:focus {
 	color: #0969da
-}
-
-.github-widget .octicon-heart {
-	color: #bf3989
 }
 
 @media (max-width: 1920px) {
