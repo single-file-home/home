@@ -144,8 +144,7 @@ header img {
 
 header>span {
 	display: flex;
-	align-items: baseline;
-	margin-block-start: 4px;
+	align-items: center;
 	height: 32px;
 	line-height: 32px;
 	max-height: 32px;
@@ -154,6 +153,7 @@ header>span {
 header>span span {
 	margin-inline-start: 10px;
 	line-height: initial;
+	height: 28px;
 }
 
 header svg {

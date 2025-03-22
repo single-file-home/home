@@ -1,7 +1,7 @@
 const CLASS_DARK = "dark-theme";
 const CLASS_LIGHT = "light-theme";
-const STYLE_TRANSFORM_ICON_DARK = "rotate(180deg) translateY(1px)";
-const STYLE_TRANSFORM_ICON_LIGHT = "translateY(-1px)";
+const STYLE_TRANSFORM_ICON_DARK = "rotate(180deg)";
+const STYLE_TRANSFORM_ICON_LIGHT = "";
 const themeButton = document.querySelector("svg");
 const githubButton = document.querySelector(".github-button");
 const documentElement = document.documentElement;
