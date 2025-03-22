@@ -60,7 +60,7 @@ hr {
 h1,
 h2,
 h3 {
-	font-family: "Agency FB", sans-serif;
+	font-family: "Agency FB", "Trebuchet MS", sans-serif;
 }
 
 h1 {
@@ -121,18 +121,6 @@ header {
 header a,
 header a:visited {
 	color: var(--header-color);
-	text-decoration: none;
-}
-
-header>a,
-header>a:visited {
-	font-family: Arial, sans-serif;
-	min-height: 32px;
-	line-height: 32px;
-	margin-inline-end: 4px;
-}
-
-header>a:hover {
 	text-decoration: none;
 }
 
