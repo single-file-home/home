@@ -48,7 +48,7 @@ li {
 	line-height: 1.5em;
 }
 
-ul {
+ul, ol {
 	margin: 0;
 }
 
@@ -149,6 +149,24 @@ header .theme-switcher-button {
 main,
 footer {
 	background-color: var(--bg-main-color);
+}
+
+nav ol {
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	padding: 0;
+	margin-inline-start: 10px;
+}
+
+nav ol li:not(:last-child)::after {
+	content: "|";
+	margin-inline-start: 10px;
+	margin-inline-end: 10px;
+}
+
+nav ol li a, nav ol li a:visited {
+	text-decoration: none;
 }
 
 main section {
