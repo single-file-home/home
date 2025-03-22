@@ -207,6 +207,7 @@ video {
 .btn:visited {
 	display: inline-block;
 	font-weight: bold;
+	letter-spacing: -.05em;
 	word-break: keep-all;
 	align-content: center;
 	min-height: 2.5em;
