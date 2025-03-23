@@ -213,6 +213,8 @@ video {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 1fr;
+	padding: 0;
+	max-inline-size: 1280px;
 }
 
 .download-section {
@@ -253,11 +255,6 @@ video {
 .download-button:active {
 	box-shadow: none;
 	transform: translate(5px, 5px);
-}
-
-#download ul {
-	padding: 0;
-	max-inline-size: 1280px;
 }
 
 footer {
