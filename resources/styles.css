@@ -45,7 +45,7 @@ p,
 li {
 	margin-block-start: 5px;
 	margin-block-end: 5px;
-	line-height: 1.5em;
+	line-height: 1.3em;
 }
 
 ul,
@@ -66,7 +66,7 @@ h3 {
 
 h1 {
 	flex: 1;
-	font-size: 1.7em;
+	font-size: 1.5em;
 	margin-block: 0;
 	margin-inline-start: 0;
 	margin-inline-end: 10px;
@@ -74,15 +74,15 @@ h1 {
 }
 
 h2 {
-	font-size: 2.5em;
-	line-height: 3rem;
+	font-size: 2.3em;
+	line-height: 2.5rem;
 	margin-block-start: .5em;
 	color: var(--title-color);
 	text-shadow: 4px 4px 0 var(--bg-download-color);
 }
 
 h3 {
-	font-size: 1.8em;
+	font-size: 1.6em;
 	color: var(--download-title-color);
 }
 
@@ -451,7 +451,7 @@ github-widget .github-btn {
 	}
 
 	h3 {
-		font-size: 1.5em;
+		font-size: 1.4em;
 	}
 }
 
