@@ -90,7 +90,7 @@ h2 a,
 h2 a:visited {
 	color: var(--bg-download-color);
 	text-decoration: none;
-	text-shadow: 1px 1px 0 var(--title-color), -1px -1px 0 var(--title-color), 1px -1px 0 var(--title-color), -1px 1px 0 var(--title-color), 4px 4px 0 var(--bg-download-color);
+	text-shadow: 2px 2px 0 var(--title-color), -2px -2px 0 var(--title-color), 2px -2px 0 var(--title-color), -2px 2px 0 var(--title-color), 4px 4px 0 var(--bg-download-color);
 }
 
 h2 a:hover {
