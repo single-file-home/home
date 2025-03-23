@@ -229,7 +229,7 @@ video {
 	text-decoration: none;
 	padding: 10px;
 	box-shadow: 5px 5px 0 var(--shadow-button-color);
-	transition: transform 0.1s, box-shadow 0.1s, background-position 0.1s ease-in-out;
+	transition: transform 0.1s, box-shadow 0.1s, background-position 0.1s;
 }
 
 .btn:hover {
