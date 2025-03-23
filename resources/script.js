@@ -2,7 +2,7 @@ const CLASS_DARK = "dark-theme";
 const CLASS_LIGHT = "light-theme";
 const STYLE_TRANSFORM_ICON_DARK = "rotate(180deg)";
 const STYLE_TRANSFORM_ICON_LIGHT = "";
-const themeButton = document.querySelector("svg");
+const themeButton = document.querySelector(".theme-switcher-button");
 const documentElement = document.documentElement;
 const darkModeQuery = matchMedia("(prefers-color-scheme: dark)");
 themeButton.addEventListener("click", () => setTheme(documentElement.className != CLASS_DARK));
