@@ -108,6 +108,10 @@ footer {
 	margin-inline-end: auto;
 }
 
+hr {
+	margin-inline: 10px;
+}
+
 header {
 	display: flex;
 	flex-wrap: wrap;
@@ -156,13 +160,12 @@ nav ol {
 	flex-wrap: wrap;
 	list-style-type: none;
 	padding: 0;
-	margin-inline-start: 10px;
+	margin-inline: 10px;
 }
 
 nav ol li:not(:last-child)::after {
 	content: "|";
-	margin-inline-start: 10px;
-	margin-inline-end: 10px;
+	margin-inline: 10px;
 }
 
 nav ol li a, nav ol li a:visited {
