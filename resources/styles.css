@@ -1,21 +1,21 @@
 @font-face {
 	font-family: "Agency FB";
 	font-weight: bold;
-	font-display: block;
-	src: url(agencyfb_bold.woff2) format("woff2");
+	font-display: swap;
+	src: url(agencyfb_bold_min.woff2) format("woff2");
 }
 
 @font-face {
 	font-family: "Montserrat";
-	font-display: block;
-	src: url(montserrat_reg.woff2) format("woff2");
+	font-display: swap;
+	src: url(montserrat_reg_min.woff2) format("woff2");
 }
 
 @font-face {
 	font-family: "Montserrat";
-	font-display: block;
+	font-display: swap;
 	font-weight: 600;
-	src: url(montserrat_semi_bold.woff2) format("woff2");
+	src: url(montserrat_semi_bold_min.woff2) format("woff2");
 }
 
 html,
