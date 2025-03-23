@@ -21,6 +21,13 @@
 html,
 body {
 	background-color: var(--bg-color);
+}
+
+html,
+body,
+footer,
+a,
+a:visited {
 	color: var(--color);
 }
 
@@ -33,7 +40,6 @@ body {
 
 a,
 a:visited {
-	color: var(--color);
 	text-decoration: underline;
 }
 
@@ -43,8 +49,7 @@ a:hover {
 
 p,
 li {
-	margin-block-start: 5px;
-	margin-block-end: 5px;
+	margin-block: 5px;
 	line-height: 1.3em;
 }
 
@@ -73,10 +78,40 @@ h1 {
 	max-block-size: 32px;
 }
 
+header,
+h1 a,
+h1 a:visited {
+	color: var(--header-color);
+}
+
+h1 a,
+h2 a,
+nav a,
+.download-button,
+.github-widget a {
+	text-decoration: none;
+}
+
 h2 {
 	font-size: 2.3em;
 	line-height: 2.5rem;
 	margin-block-start: .5em;
+	color: var(--title-color);
+	text-shadow: 4px 4px 0 var(--bg-download-color);
+}
+
+h2 a,
+h2 a:visited {
+	color: var(--bg-download-color);
+	text-shadow:
+		2px 2px 0 var(--title-color),
+		-2px -2px 0 var(--title-color),
+		2px -2px 0 var(--title-color),
+		-2px 2px 0 var(--title-color),
+		4px 4px 0 var(--bg-download-color);
+}
+
+h2 a:hover {
 	color: var(--title-color);
 	text-shadow: 4px 4px 0 var(--bg-download-color);
 }
@@ -86,25 +121,12 @@ h3 {
 	color: var(--download-title-color);
 }
 
-h2 a,
-h2 a:visited {
-	color: var(--bg-download-color);
-	text-decoration: none;
-	text-shadow: 2px 2px 0 var(--title-color), -2px -2px 0 var(--title-color), 2px -2px 0 var(--title-color), -2px 2px 0 var(--title-color), 4px 4px 0 var(--bg-download-color);
-}
-
-h2 a:hover {
-	color: var(--title-color);
-	text-decoration: none;
-	text-shadow: 4px 4px 0 var(--bg-download-color);
-}
-
 header,
 main,
 footer {
 	padding: 10px;
 	margin: 10px;
-	width: 60%;
+	inline-size: 60%;
 	min-inline-size: 1200px;
 	margin-inline-start: auto;
 	margin-inline-end: auto;
@@ -120,27 +142,19 @@ header {
 	row-gap: 10px;
 	justify-content: end;
 	align-items: center;
-	color: var(--header-color);
 	background-color: var(--bg-header-color);
 }
 
-header h1 a,
-header h1 a:visited {
-	color: var(--header-color);
-	text-decoration: none;
-}
-
 header img {
-	width: 32px;
-	height: 32px;
+	inline-size: 32px;
+	block-size: 32px;
 	padding-inline-end: 10px;
 }
 
 header>span {
 	display: flex;
 	align-items: center;
-	height: 32px;
-	line-height: 32px;
+	block-size: 32px;
 	max-block-size: 32px;
 	margin-inline-start: 10px;
 }
@@ -148,8 +162,8 @@ header>span {
 header .theme-switcher-button {
 	cursor: pointer;
 	user-select: none;
-	width: 24px;
-	height: 24px;
+	inline-size: 24px;
+	block-size: 24px;
 }
 
 main,
@@ -157,22 +171,20 @@ footer {
 	background-color: var(--bg-main-color);
 }
 
+nav ol,
+nav ol li::after {
+	margin-inline: 10px;
+}
+
 nav ol {
 	display: flex;
 	flex-wrap: wrap;
 	list-style-type: none;
 	padding: 0;
-	margin-inline: 10px;
 }
 
 nav ol li:not(:last-child)::after {
 	content: "|";
-	margin-inline: 10px;
-}
-
-nav ol li a,
-nav ol li a:visited {
-	text-decoration: none;
 }
 
 main section {
@@ -188,8 +200,8 @@ footer {
 }
 
 video {
-	width: 100%;
-	height: auto;
+	inline-size: 100%;
+	block-size: auto;
 	max-inline-size: 882px;
 	max-block-size: 588px;
 	aspect-ratio: 882 / 588;
@@ -214,8 +226,8 @@ video {
 	padding: 10px;
 }
 
-.btn,
-.btn:visited {
+.download-button,
+.download-button:visited {
 	display: inline-block;
 	font-weight: bold;
 	letter-spacing: -.05em;
@@ -226,21 +238,19 @@ video {
 	background: linear-gradient(to bottom, var(--bg-hover-button-color) 50%, var(--bg-button-color) 50%);
 	background-size: 100% 200%;
 	background-position: 0% 100%;
-	text-decoration: none;
 	padding: 10px;
 	box-shadow: 5px 5px 0 var(--shadow-button-color);
 	transition: transform 0.1s, box-shadow 0.1s, background-position 0.1s;
 }
 
-.btn:hover {
+.download-button:hover {
 	color: var(--hover-button-color);
 	background-position: 0% 0%;
-	text-decoration: none;
 	box-shadow: 5px 5px 0 var(--hover-shadow-button-color);
 	text-shadow: none;
 }
 
-.btn:active {
+.download-button:active {
 	box-shadow: none;
 	transform: translate(5px, 5px);
 }
@@ -254,16 +264,6 @@ footer {
 	font-size: 0.9em;
 	text-align: center;
 	line-height: 1.5em;
-	color: var(--color);
-}
-
-footer a,
-footer a:visited {
-	color: var(--color);
-}
-
-footer a:hover {
-	color: var(--link-color);
 }
 
 video::-webkit-media-controls {
@@ -282,20 +282,22 @@ video::-webkit-media-controls-enclosure {
 	line-height: 0;
 	white-space: nowrap;
 	margin-inline-start: 10px;
+	vertical-align: text-top;
+	fill: black;
+	overflow: visible
 }
 
 .github-widget a {
 	color: #25292e;
-	text-decoration: none;
 	outline: 0
 }
 
-.github-btn,
-.github-widget .social-count {
+.github-button,
+.github-social-count {
 	position: relative;
 	display: inline-block;
 	display: inline-flex;
-	height: 14px;
+	block-size: 14px;
 	padding: 2px 5px;
 	font-size: 11px;
 	font-weight: 600;
@@ -312,41 +314,34 @@ video::-webkit-media-controls-enclosure {
 	border: 1px solid
 }
 
-.github-btn {
+.github-button {
 	border-radius: .25em
 }
 
-.github-btn:not(:last-child) {
+.github-button:not(:last-child) {
 	border-radius: .25em 0 0 .25em
 }
 
-.github-widget .social-count {
+.github-social-count {
 	border-left: 0;
 	border-radius: 0 .25em .25em 0
 }
 
-.github-btn,
-.github-widget .social-count {
-	height: 16px;
+.github-button,
+.github-social-count {
+	block-size: 16px;
 	padding: 5px 10px;
 	font-size: 12px;
 	line-height: 16px
 }
 
-.github-widget .octicon {
-	display: inline-block;
-	vertical-align: text-top;
-	fill: black;
-	overflow: visible
-}
-
-.github-btn:focus-visible,
-.github-widget .social-count:focus-visible {
+.github-button:focus-visible,
+.github-social-count:focus-visible {
 	outline: 2px solid #0969da;
 	outline-offset: -2px
 }
 
-.github-btn {
+.github-button {
 	color: #25292e;
 	background-color: #ebf0f4;
 	border-color: #d1d9e0;
@@ -356,12 +351,12 @@ video::-webkit-media-controls-enclosure {
 	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFF6F8FA', endColorstr='#FFEAEFF3')
 }
 
-github-widget .github-btn {
+.github-button {
 	filter: none
 }
 
-.github-btn:hover,
-.github-btn:focus {
+.github-button:hover,
+.github-button:focus {
 	background-color: #e5eaee;
 	background-position: 0 -0.5em;
 	border-color: #d1d9e0;
@@ -371,26 +366,26 @@ github-widget .github-btn {
 	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFEFF2F5', endColorstr='#FFE4E9ED')
 }
 
-.github-btn:hover,
-.github-btn:focus {
+.github-button:hover,
+.github-button:focus {
 	filter: none
 }
 
-.github-btn:active {
+.github-button:active {
 	background-color: #e6eaef;
 	border-color: #d1d9e0;
 	background-image: none;
 	filter: none
 }
 
-.github-widget .social-count {
+.github-social-count {
 	color: #25292e;
 	background-color: #fff;
 	border-color: #d1d9e0
 }
 
-.github-widget .social-count:hover,
-.github-widget .social-count:focus {
+.github-social-count:hover,
+.github-social-count:focus {
 	color: #0969da
 }
 
@@ -410,7 +405,7 @@ github-widget .github-btn {
 	header,
 	main,
 	footer {
-		width: auto;
+		inline-size: auto;
 		min-inline-size: auto;
 		margin: 0;
 	}

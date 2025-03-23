@@ -25,7 +25,7 @@ async function setGitHubCounter() {
         const count = Intl.NumberFormat().format(stargazers_count);
         const githubWidget = document.querySelector(".github-widget");
         const counterButton = document.createElement("a");
-        counterButton.classList.add("social-count");
+        counterButton.classList.add("github-social-count");
         counterButton.href = "https://github.com/gildas-lormeau/SingleFile/stargazers";
         counterButton.rel = "noopener";
         counterButton.target = "_blank";
