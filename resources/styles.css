@@ -132,10 +132,6 @@ footer {
 	margin-inline-end: auto;
 }
 
-hr {
-	margin-inline: 10px;
-}
-
 header {
 	display: flex;
 	flex-wrap: wrap;
@@ -172,7 +168,8 @@ footer {
 }
 
 nav ol,
-nav ol li::after {
+nav ol li::after,
+hr {
 	margin-inline: 10px;
 }
 
