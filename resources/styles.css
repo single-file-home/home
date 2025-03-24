@@ -341,9 +341,7 @@ video::-webkit-media-controls-enclosure {
 	background-color: #ebf0f4;
 	border-color: #d1d9e0;
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23f6f8fa'/%3e%3cstop offset='90%25' stop-color='%23ebf0f4'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");
-	background-image: -moz-linear-gradient(top, #f6f8fa, #ebf0f4 90%);
 	background-image: linear-gradient(180deg, #f6f8fa, #ebf0f4 90%);
-	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFF6F8FA', endColorstr='#FFEAEFF3')
 }
 
 .github-button {
@@ -356,9 +354,7 @@ video::-webkit-media-controls-enclosure {
 	background-position: 0 -0.5em;
 	border-color: #d1d9e0;
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23eff2f5'/%3e%3cstop offset='90%25' stop-color='%23e5eaee'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");
-	background-image: -moz-linear-gradient(top, #eff2f5, #e5eaee 90%);
 	background-image: linear-gradient(180deg, #eff2f5, #e5eaee 90%);
-	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFEFF2F5', endColorstr='#FFE4E9ED')
 }
 
 .github-button:hover,
