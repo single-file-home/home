@@ -194,7 +194,7 @@ main section {
 main section p,
 nav,
 footer {
-	letter-spacing: -0.025em;
+	letter-spacing: -0.0125em;
 }
 
 video {
