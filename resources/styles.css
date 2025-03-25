@@ -306,7 +306,10 @@ video::-webkit-media-controls-enclosure {
 }
 
 .github-button {
-	border-radius: .25em
+	border-radius: .25em;
+	color: #25292e;
+	background-color: #ebf0f4;
+	background-image: linear-gradient(180deg, #f6f8fa, #ebf0f4 90%);
 }
 
 .github-button:not(:last-child) {
@@ -315,13 +318,9 @@ video::-webkit-media-controls-enclosure {
 
 .github-social-count {
 	border-left: 0;
-	border-radius: 0 .25em .25em 0
-}
-
-.github-button {
+	border-radius: 0 .25em .25em 0;
 	color: #25292e;
-	background-color: #ebf0f4;
-	background-image: linear-gradient(180deg, #f6f8fa, #ebf0f4 90%);
+	background-color: #fff;
 }
 
 .github-button:hover,
@@ -334,11 +333,6 @@ video::-webkit-media-controls-enclosure {
 .github-button:active {
 	background-color: #e6eaef;
 	background-image: none;
-}
-
-.github-social-count {
-	color: #25292e;
-	background-color: #fff;
 }
 
 .github-social-count:hover,
