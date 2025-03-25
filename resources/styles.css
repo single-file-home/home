@@ -305,6 +305,7 @@ video::-webkit-media-controls-enclosure {
 
 .github-button {
 	display: flex;
+	gap: 3px;
 	border-radius: .25em;
 	background-color: #ebf0f4;
 	background-image: linear-gradient(180deg, #f6f8fa, #ebf0f4 90%);
