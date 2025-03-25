@@ -274,8 +274,8 @@ video::-webkit-media-controls-enclosure {
 }
 
 .github-widget {
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
-	font-size: 0;
+	display: flex;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 	white-space: nowrap;
 	margin-inline-start: 10px;
 }
@@ -286,13 +286,11 @@ video::-webkit-media-controls-enclosure {
 
 .github-button,
 .github-social-count {
-	display: inline-flex;
 	block-size: 16px;
 	padding: 5px 10px;
 	font-size: 12px;
 	line-height: 16px;
 	font-weight: 600;
-	vertical-align: bottom;
 	cursor: pointer;
 	user-select: none;
 	border: 1px solid;
@@ -306,8 +304,8 @@ video::-webkit-media-controls-enclosure {
 }
 
 .github-button {
+	display: flex;
 	border-radius: .25em;
-	color: #25292e;
 	background-color: #ebf0f4;
 	background-image: linear-gradient(180deg, #f6f8fa, #ebf0f4 90%);
 }
@@ -319,7 +317,6 @@ video::-webkit-media-controls-enclosure {
 .github-social-count {
 	border-left: 0;
 	border-radius: 0 .25em .25em 0;
-	color: #25292e;
 	background-color: #fff;
 }
 
