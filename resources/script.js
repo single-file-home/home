@@ -1,7 +1,5 @@
 const CLASS_DARK = "dark-theme";
 const CLASS_LIGHT = "light-theme";
-const STYLE_TRANSFORM_ICON_DARK = "rotate(180deg)";
-const STYLE_TRANSFORM_ICON_LIGHT = "";
 const themeButton = document.querySelector(".theme-switcher-button");
 const documentElement = document.documentElement;
 const darkModeQuery = matchMedia("(prefers-color-scheme: dark)");
@@ -15,7 +13,6 @@ document.currentScript.remove();
 
 function setTheme(darkThemeSelected) {
     documentElement.className = darkThemeSelected ? CLASS_DARK : CLASS_LIGHT;
-    themeButton.style.transform = darkThemeSelected ? STYLE_TRANSFORM_ICON_DARK : STYLE_TRANSFORM_ICON_LIGHT;
 }
 
 async function setGitHubCounter() {

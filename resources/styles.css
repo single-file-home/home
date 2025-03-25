@@ -155,11 +155,15 @@ header>span {
 	margin-inline-start: 10px;
 }
 
-header .theme-switcher-button {
+.theme-switcher-button {
 	cursor: pointer;
 	user-select: none;
 	inline-size: 24px;
 	block-size: 24px;
+}
+
+.dark-theme .theme-switcher-button {
+	transform: rotate(180deg);
 }
 
 main,
