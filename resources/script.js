@@ -5,7 +5,7 @@ const githubWidget = document.querySelector(".github-widget");
 const documentElement = document.documentElement;
 const darkModeQuery = matchMedia("(prefers-color-scheme: dark)");
 themeButton.onclick = () => setTheme(documentElement.className != CLASS_DARK);
-themeButton.onkeydown = event => event.key === "Enter" && setTheme(documentElement.className != CLASS_DARK);
+themeButton.onkeydown = event => { event.key === "Enter" && setTheme(documentElement.className != CLASS_DARK) };
 darkModeQuery.onchange = event => setTheme(event.matches);
 setTheme(darkModeQuery.matches);
 setGitHubCounter();
