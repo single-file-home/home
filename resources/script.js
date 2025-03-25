@@ -20,7 +20,7 @@ async function setGitHubCounter() {
     const response = await fetch("https://api.github.com/repos/gildas-lormeau/SingleFile");
     if (response.ok) {
         const { stargazers_count } = await response.json();
-        const stargazersCount = Intl.NumberFormat().format(stargazers_count);
+        const stargazersCount = Intl.NumberFormat(documentElement.lang).format(stargazers_count);
         githubWidget.appendChild(Object.assign(document.createElement("a"), {
             className: "github-social-count",
             href: "https://github.com/gildas-lormeau/SingleFile/stargazers",
