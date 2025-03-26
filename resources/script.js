@@ -7,7 +7,6 @@ const darkModeQuery = matchMedia("(prefers-color-scheme: dark)");
 themeButton.onclick = () => setTheme(documentElement.className != CLASS_DARK);
 themeButton.onkeydown = event => { event.key === "Enter" && setTheme(documentElement.className != CLASS_DARK); };
 darkModeQuery.onchange = event => setTheme(event.matches);
-onload = () => setTimeout(() => fetch("https://github.com/single-file-home/home", { mode: 'no-cors' }), 2500);
 setTheme(darkModeQuery.matches);
 setGitHubCounter();
 themeButton.style.display = "";
