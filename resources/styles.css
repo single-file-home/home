@@ -141,7 +141,7 @@ header {
 	background-color: var(--bg-header-color);
 }
 
-header img {
+.logo {
 	inline-size: 32px;
 	block-size: 32px;
 	padding-inline-end: 10px;
