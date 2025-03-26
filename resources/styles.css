@@ -18,6 +18,10 @@
 	src: url(montserrat_semi_bold_min.woff2) format("woff2");
 }
 
+* {
+	transition: background-color 0.25s, color 0.25s, text-shadow 0.25s;
+}
+
 html {
 	background-color: var(--bg-color);
 	font-family: "Montserrat", Arial, sans-serif;
