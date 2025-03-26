@@ -18,24 +18,17 @@
 	src: url(montserrat_semi_bold_min.woff2) format("woff2");
 }
 
-html,
-body {
+html {
 	background-color: var(--bg-color);
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 18px;
+	min-inline-size: 220px;
 }
 
 html,
-body,
-footer,
 a,
 a:visited {
 	color: var(--color);
-}
-
-body {
-	font-family: "Montserrat", Arial, sans-serif;
-	font-size: 18px;
-	margin: 0;
-	min-inline-size: 220px;
 }
 
 a,
@@ -165,9 +158,10 @@ header {
 	transform: rotate(180deg);
 }
 
-main,
+nav,
+main section p,
 footer {
-	background-color: var(--bg-main-color);
+	letter-spacing: -0.0125em;
 }
 
 nav ol,
@@ -187,17 +181,16 @@ nav ol li:not(:last-child)::after {
 	content: "|";
 }
 
+main,
+footer {
+	background-color: var(--bg-main-color);
+}
+
 main section {
 	display: flex;
 	flex-direction: column;
 	padding-inline: 10px;
 	padding-block-end: 20px;
-}
-
-main section p,
-nav,
-footer {
-	letter-spacing: -0.0125em;
 }
 
 video {
@@ -341,8 +334,7 @@ video::-webkit-media-controls-enclosure {
 
 @media (max-width: 1280px) {
 
-	html,
-	body {
+	html {
 		background-color: var(--bg-main-color);
 	}
 
