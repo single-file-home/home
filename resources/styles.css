@@ -19,7 +19,7 @@
 }
 
 * {
-	transition: background-color 0.25s, color 0.25s, text-shadow 0.25s;
+	transition: background-color .25s, color .25s, text-shadow .25s;
 }
 
 html {
@@ -165,7 +165,7 @@ header {
 nav,
 main section p,
 footer {
-	letter-spacing: -0.0125em;
+	letter-spacing: -.0125em;
 }
 
 nav ol,
@@ -240,7 +240,7 @@ video {
 	background-position: 0% 100%;
 	padding: 10px;
 	box-shadow: 5px 5px 0 var(--shadow-button-color);
-	transition: transform 0.1s, box-shadow 0.1s, background-position 0.1s;
+	transition: transform .1s, box-shadow .1s, background-position .1s;
 }
 
 .download-button:hover {
@@ -256,7 +256,7 @@ video {
 }
 
 footer {
-	font-size: 0.9em;
+	font-size: .9em;
 	text-align: center;
 	line-height: 1.5em;
 }
@@ -316,7 +316,7 @@ video::-webkit-media-controls-enclosure {
 .github-button:hover,
 .github-button:focus {
 	background-color: #e5eaee;
-	background-position: 0 -0.5em;
+	background-position: 0 -.5em;
 	background-image: linear-gradient(180deg, #eff2f5, #e5eaee 90%);
 }
 
@@ -403,8 +403,8 @@ html,
 	--download-title-color: #083863;
 	--bg-button-color: #00acea;
 	--button-color: #011b31;
-	--shadow-button-color: rgba(0, 0, 0, 0.5);
-	--hover-shadow-button-color: rgba(0, 0, 0, 0.25);
+	--shadow-button-color: rgba(0, 0, 0, .5);
+	--hover-shadow-button-color: rgba(0, 0, 0, .25);
 	--bg-hover-button-color: #00efd1;
 	--hover-button-color: #083863;
 	--link-color: #00acea;
@@ -418,8 +418,8 @@ html,
 	--title-color: #fedb41;
 	--bg-download-color: #011b31;
 	--download-title-color: #fedb41;
-	--shadow-button-color: rgba(128, 128, 128, 0.25);
-	--hover-shadow-button-color: rgba(128, 128, 128, 0.5);
+	--shadow-button-color: rgba(128, 128, 128, .25);
+	--hover-shadow-button-color: rgba(128, 128, 128, .5);
 	--hover-button-color: #011b31;
 }
 
@@ -433,8 +433,8 @@ html,
 		--title-color: #fedb41;
 		--bg-download-color: #011b31;
 		--download-title-color: #fedb41;
-		--shadow-button-color: rgba(128, 128, 128, 0.25);
-		--hover-shadow-button-color: rgba(128, 128, 128, 0.5);
+		--shadow-button-color: rgba(128, 128, 128, .25);
+		--hover-shadow-button-color: rgba(128, 128, 128, .5);
 		--hover-button-color: #011b31;
 	}
 }
