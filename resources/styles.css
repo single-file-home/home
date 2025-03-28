@@ -75,10 +75,10 @@ h1 {
 	max-block-size: 32px;
 }
 
-header,
 h1 a,
 h1 a:visited {
 	color: var(--header-color);
+	transition: none;
 }
 
 h1 a,
