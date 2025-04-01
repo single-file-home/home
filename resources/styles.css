@@ -55,11 +55,6 @@ ol {
 	margin: 0;
 }
 
-hr {
-	border-style: solid;
-	border-color: var(--section-separator-color);
-}
-
 h1,
 h2,
 h3 {
@@ -169,8 +164,7 @@ footer {
 }
 
 nav ol,
-nav ol li::after,
-hr {
+nav ol li::after {
 	margin-inline: 10px;
 }
 
@@ -199,6 +193,14 @@ main section {
 	flex-direction: column;
 	padding-inline: 10px;
 	padding-block-end: 20px;
+}
+
+main section:after {
+	content: "";
+	border-block-end-style: solid;
+	border-width: 2px;
+	border-color: var(--section-separator-color);
+	margin-block: 20px 0;
 }
 
 video {
