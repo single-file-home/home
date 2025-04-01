@@ -131,8 +131,7 @@ footer {
 	margin: 10px;
 	inline-size: 60%;
 	min-inline-size: 1200px;
-	margin-inline-start: auto;
-	margin-inline-end: auto;
+	margin-inline: auto;
 }
 
 header {
