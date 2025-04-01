@@ -159,6 +159,9 @@ header {
 	transform: rotate(180deg);
 }
 
+h1,
+h2,
+h3,
 nav,
 main section p,
 footer {
