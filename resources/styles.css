@@ -262,7 +262,7 @@ video {
 footer {
 	font-size: .9em;
 	text-align: center;
-	line-height: 1.5em;
+	line-height: 1.3em;
 }
 
 video::-webkit-media-controls {
