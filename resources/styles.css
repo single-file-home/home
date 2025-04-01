@@ -1,8 +1,8 @@
 @font-face {
-	font-family: "Agency FB";
+	font-family: "Gemunu Libre";
 	font-weight: bold;
 	font-display: swap;
-	src: url(agencyfb_bold_min.woff2) format("woff2");
+	src: url(gemunulibre_bold_min.woff2) format("woff2");
 }
 
 @font-face {
@@ -58,7 +58,7 @@ ol {
 h1,
 h2,
 h3 {
-	font-family: "Agency FB", Tahoma, sans-serif;
+	font-family: "Gemunu Libre", Tahoma, sans-serif;
 }
 
 h1 {
