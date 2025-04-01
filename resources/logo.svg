@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="847" height="847" viewBox="0 0 847 847"
+<svg width="847" height="847" viewBox="0 0 847 847" style="fill:#083863"
    xmlns="http://www.w3.org/2000/svg">
-   <g id="logo">
-      <path id="page" style="fill:#00acea" d="M 120,0 C 76,0 40,36 40,80 v 565 c 0,44 36,80 80,80 h 407 c 44,0 80,-36 80,-80 V 197 L 418,0 Z m 445,10 z" />
-      <path id="page-corner" style="fill:#00efd1" d="M 607,197 418,0 v 126 c 0,45 27,71 71,71 z" />
-      <rect id="line-1" style="fill:#083863" width="224" height="38" x="151" y="329" rx="20" ry="20" />
-      <rect id="line-2" style="fill:#083863" width="278" height="38" x="151" y="422" rx="20" ry="20" />
-      <rect id="line-3" style="fill:#083863" width="216" height="38" x="151" y="515" rx="20" ry="20" />
-      <circle id="circle" style="fill:#fedb41" cx="572" cy="612" r="235" />
-      <path id="arrow" style="fill:#083863" d="m 572,470 c -11,0 -19,9 -19,20 v 199 l -77,-82 c -7,-7 -18,-7 -26,0 -8,7 -8,19 -2,26 l 110,118 c 5,5 9,6 14,6 5,0 9,-1 14,-6 L 695,633 c 7,-7 6,-19 -2,-26 -8,-7 -19,-7 -26,0 l -76,82 V 490 c 0,-11 -8,-20 -19,-20 z" />
-   </g>
+   <path style="fill:#00acea" d="M 120,0 C 76,0 40,36 40,80 v 565 c 0,44 36,80 80,80 h 407 c 44,0 80,-36 80,-80 V 197 L 418,0 Z m 445,10 z" />
+   <path style="fill:#00efd1" d="M 607,197 418,0 v 126 c 0,45 27,71 71,71 z" />
+   <rect width="224" height="38" x="151" y="329" rx="20" ry="20" />
+   <rect width="278" height="38" x="151" y="422" rx="20" ry="20" />
+   <rect width="216" height="38" x="151" y="515" rx="20" ry="20" />
+   <circle style="fill:#fedb41" cx="572" cy="612" r="235" />
+   <path d="m 572,470 c -11,0 -19,9 -19,20 v 199 l -77,-82 c -7,-7 -18,-7 -26,0 -8,7 -8,19 -2,26 l 110,118 c 5,5 9,6 14,6 5,0 9,-1 14,-6 L 695,633 c 7,-7 6,-19 -2,-26 -8,-7 -19,-7 -26,0 l -76,82 V 490 c 0,-11 -8,-20 -19,-20 z" />
 </svg>
