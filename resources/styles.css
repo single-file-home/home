@@ -140,7 +140,6 @@ header {
 	flex-wrap: wrap;
 	row-gap: 10px;
 	justify-content: end;
-	align-items: center;
 	background-color: var(--bg-header-color);
 }
 
