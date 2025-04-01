@@ -148,7 +148,7 @@ header {
 	padding-inline-end: 10px;
 }
 
-.buttons {
+.homepage-buttons {
 	display: flex;
 	align-items: center;
 	block-size: 32px;
