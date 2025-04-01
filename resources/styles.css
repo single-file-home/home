@@ -181,6 +181,10 @@ nav ol {
 	padding: 0;
 }
 
+nav ol li {
+	line-height: 1em;
+}
+
 nav ol li:not(:last-child)::after {
 	content: "|";
 }
