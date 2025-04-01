@@ -195,7 +195,7 @@ main section {
 	padding-block-end: 20px;
 }
 
-main section:after {
+main section:not(:last-of-type):after {
 	content: "";
 	border-block-end-style: solid;
 	border-width: 2px;
