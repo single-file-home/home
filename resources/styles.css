@@ -62,14 +62,17 @@ h3 {
 }
 
 h1 {
-	display: flex;
-	align-items: center;
 	flex: 1;
 	font-size: 1.5em;
 	margin-block: 0;
 	margin-inline-start: 0;
 	margin-inline-end: 20px;
 	max-block-size: 32px;
+}
+
+.homepage-link {
+	display: flex;
+	align-items: center;
 }
 
 h1 a,
