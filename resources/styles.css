@@ -315,7 +315,7 @@ video::-webkit-media-controls-enclosure {
 	border-radius: .25em 0 0 .25em
 }
 
-.github-button:not(:has(.github-social-count)) {
+.github-widget:not(:has(.github-social-count)) .github-button {
 	border-radius: .25em;
 }
 
