@@ -211,9 +211,8 @@ main section {
 
 main section:not(:last-of-type):after {
 	content: "";
+	border: 2px none var(--section-separator-color);
 	border-block-end-style: solid;
-	border-width: 2px;
-	border-color: var(--section-separator-color);
 	margin-block: 20px 0;
 }
 
@@ -309,8 +308,7 @@ video::-webkit-media-controls-enclosure {
 	font-weight: 600;
 	cursor: pointer;
 	user-select: none;
-	border: 1px solid;
-	border-color: #d1d9e0;
+	border: 1px solid #d1d9e0;
 }
 
 .github-button:focus-visible,
