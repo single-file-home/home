@@ -362,6 +362,10 @@ video::-webkit-media-controls-enclosure {
 		margin: 0;
 	}
 
+	main {
+		padding-inline: 0;
+	}
+
 	footer {
 		margin-block-start: 20px;
 		background-color: var(--bg-color);
