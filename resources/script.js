@@ -9,7 +9,7 @@ themeButton.onkeydown = event => { event.key === "Enter" && setTheme(documentEle
 darkModeQuery.onchange = event => setTheme(event.matches);
 setTheme(darkModeQuery.matches);
 setGitHubCounter();
-themeButton.style.display = "";
+themeButton.style.display = "inline";
 document.currentScript.remove();
 
 function setTheme(darkThemeSelected) {

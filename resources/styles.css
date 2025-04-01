@@ -147,10 +147,12 @@ header {
 }
 
 .theme-switcher-button {
+	display: none;
 	cursor: pointer;
 	user-select: none;
 	inline-size: 24px;
 	block-size: 24px;
+	fill: #ffffff;
 }
 
 .dark-theme .theme-switcher-button {
