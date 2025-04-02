@@ -13,8 +13,8 @@
 
 @font-face {
 	font-family: "Montserrat";
-	font-display: swap;
 	font-weight: 600;
+	font-display: swap;
 	src: url(montserrat_semi_bold_min.woff2) format("woff2");
 }
 
