@@ -248,6 +248,7 @@ video {
 .download-button,
 .download-button:visited {
 	display: inline-block;
+	line-height: 1.1em;
 	font-weight: 600;
 	letter-spacing: -.05em;
 	word-break: keep-all;
