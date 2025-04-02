@@ -179,7 +179,7 @@ footer {
 
 nav ol,
 nav ol li::after {
-	margin-inline: 10px;
+	margin-inline: 6px;
 }
 
 nav ol {
