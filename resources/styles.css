@@ -149,6 +149,25 @@ header {
 	padding-inline-end: 10px;
 }
 
+.logo .logo-lines,
+.logo .logo-arrow {
+	transition: transform .25s ease-in-out, fill .25s ease-in-out;
+}
+
+.logo:hover .logo-lines {
+	fill: var(--yellow)
+}
+
+.logo .logo-arrow {
+	transform-origin: 572px 612px;
+	transform: rotate(0deg);
+}
+
+.logo:hover .logo-arrow {
+	transform: rotate(360deg);
+	fill: var(--cyan);
+}
+
 .homepage-buttons {
 	display: flex;
 	align-items: center;
@@ -417,51 +436,66 @@ video::-webkit-media-controls-enclosure {
 	}
 }
 
+html {
+	--yellow: #fedb41;
+	--cyan: #00acea;
+	--light-cyan: #00efd1;
+	--blue: #083863;
+	--light-yellow: #fef5cc;
+	--lighter-yellow: #fff2b9;
+	--lightest-yellow: #fff8d9;
+	--dark-blue: #011b31;
+	--light-black: rgba(0, 0, 0, .5);
+	--dark-black: rgba(0, 0, 0, .25);
+	--light-grey: rgba(128, 128, 128, .5);
+	--dark-grey: rgba(128, 128, 128, .25);
+}
+
 html,
 .light-theme {
-	--bg-color: #fff8d9;
-	--color: #083863;
-	--bg-header-color: #083863;
-	--header-color: #fef5cc;
-	--bg-main-color: #fff2b9;
-	--title-color: #00acea;
-	--section-separator-color: #fedb41;
-	--bg-download-color: #fedb41;
-	--download-title-color: #083863;
-	--bg-button-color: #00acea;
-	--button-color: #011b31;
-	--shadow-button-color: rgba(0, 0, 0, .5);
-	--hover-shadow-button-color: rgba(0, 0, 0, .25);
-	--bg-hover-button-color: #00efd1;
-	--hover-button-color: #083863;
-	--link-color: #00acea;
+	--bg-color: var(--lightest-yellow);
+	--color: var(--blue);
+	--bg-header-color: var(--blue);
+	--header-color: var(--light-yellow);
+	--bg-main-color: var(--lighter-yellow);
+	--title-color: var(--cyan);
+	--section-separator-color: var(--yellow);
+	--bg-download-color: var(--yellow);
+	--download-title-color: var(--blue);
+	--bg-button-color: var(--cyan);
+	--button-color: var(--dark-blue);
+	--shadow-button-color: var(--light-black);
+	--hover-shadow-button-color: var(--dark-black);
+	--bg-hover-button-color: var(--light-cyan);
+	--hover-button-color: var(--blue);
+	--link-color: var(--cyan);
 }
 
 .dark-theme {
-	--bg-color: #011b31;
-	--color: #fef5cc;
-	--bg-header-color: #011b31;
-	--bg-main-color: #083863;
-	--title-color: #fedb41;
-	--bg-download-color: #011b31;
-	--download-title-color: #fedb41;
-	--shadow-button-color: rgba(128, 128, 128, .25);
-	--hover-shadow-button-color: rgba(128, 128, 128, .5);
-	--hover-button-color: #011b31;
+	--bg-color: var(--dark-blue);
+	--color: var(--light-yellow);
+	--bg-header-color: var(--dark-blue);
+	--bg-main-color: var(--blue);
+	--title-color: var(--yellow);
+	--bg-download-color: var(--dark-blue);
+	--download-title-color: var(--yellow);
+	--shadow-button-color: var(--lighter-grey);
+	--hover-shadow-button-color: var(--light-grey);
+	--hover-button-color: var(--dark-blue);
 }
 
 @media (prefers-color-scheme: dark) {
 
 	html {
-		--bg-color: #011b31;
-		--color: #fef5cc;
-		--bg-header-color: #011b31;
-		--bg-main-color: #083863;
-		--title-color: #fedb41;
-		--bg-download-color: #011b31;
-		--download-title-color: #fedb41;
-		--shadow-button-color: rgba(128, 128, 128, .25);
-		--hover-shadow-button-color: rgba(128, 128, 128, .5);
-		--hover-button-color: #011b31;
+		--bg-color: var(--dark-blue);
+		--color: var(--light-yellow);
+		--bg-header-color: var(--dark-blue);
+		--bg-main-color: var(--blue);
+		--title-color: var(--yellow);
+		--bg-download-color: var(--dark-blue);
+		--download-title-color: var(--yellow);
+		--shadow-button-color: var(--lighter-grey);
+		--hover-shadow-button-color: var(--light-grey);
+		--hover-button-color: var(--dark-blue);
 	}
 }
