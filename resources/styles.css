@@ -59,6 +59,7 @@ h1,
 h2,
 h3 {
 	font-family: "Gemunu Libre", Tahoma, sans-serif;
+	font-feature-settings: "kern" off;
 }
 
 h1 {
