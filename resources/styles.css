@@ -150,7 +150,8 @@ header {
 }
 
 .logo .logo-lines,
-.logo .logo-arrow {
+.logo .logo-arrow,
+.logo .logo-circle {
 	transition: transform .25s ease-in-out, fill .25s ease-in-out;
 }
 
