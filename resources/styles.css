@@ -155,11 +155,11 @@ header {
 }
 
 .logo:hover .logo-lines {
-	fill: var(--yellow)
+	fill: var(--bright-sun)
 }
 
 .logo:hover .logo-arrow {
-	fill: var(--cyan);
+	fill: var(--cerulean);
 }
 
 .homepage-buttons {
@@ -431,65 +431,63 @@ video::-webkit-media-controls-enclosure {
 }
 
 html {
-	--yellow: #fedb41;
-	--cyan: #00acea;
-	--light-cyan: #00efd1;
-	--blue: #083863;
-	--light-yellow: #fef5cc;
-	--lighter-yellow: #fff2b9;
-	--lightest-yellow: #fff8d9;
-	--dark-blue: #011b31;
-	--light-black: rgba(0, 0, 0, .5);
-	--dark-black: rgba(0, 0, 0, .25);
-	--light-grey: rgba(128, 128, 128, .5);
-	--dark-grey: rgba(128, 128, 128, .25);
+	--bright-sun: #fedb41;
+	--cerulean: #00acea;
+	--bright-turquoise: #00efd1;
+	--deep-sapphire: #083863;
+	--lemon-chiffon: #fef5cc;
+	--buttermilk: #fff2b9;
+	--scotch-mist: #fff8d9;
+	--midnight: #011b31;
+	--light-black-shadow: rgba(0, 0, 0, .5);
+	--dark-black-shadow: rgba(0, 0, 0, .25);
+	--light-grey-shadow: rgba(128, 128, 128, .5);
+	--dark-grey-shadow: rgba(128, 128, 128, .25);
+	--header-color: var(--lemon-chiffon);
+	--section-separator-color: var(--bright-sun);
+	--button-color: var(--midnight);
+	--bg-button-color: var(--cerulean);
+	--bg-hover-button-color: var(--bright-turquoise);
+	--link-color: var(--cerulean);
 }
 
-html,
 .light-theme {
-	--bg-color: var(--lightest-yellow);
-	--color: var(--blue);
-	--bg-header-color: var(--blue);
-	--header-color: var(--light-yellow);
-	--bg-main-color: var(--lighter-yellow);
-	--title-color: var(--cyan);
-	--section-separator-color: var(--yellow);
-	--bg-download-color: var(--yellow);
-	--download-title-color: var(--blue);
-	--bg-button-color: var(--cyan);
-	--button-color: var(--dark-blue);
-	--shadow-button-color: var(--light-black);
-	--hover-shadow-button-color: var(--dark-black);
-	--bg-hover-button-color: var(--light-cyan);
+	--bg-color: var(--scotch-mist);
+	--color: var(--deep-sapphire);
+	--bg-header-color: var(--deep-sapphire);
+	--bg-main-color: var(--buttermilk);
+	--title-color: var(--cerulean);
+	--bg-download-color: var(--bright-sun);
+	--shadow-button-color: var(--light-black-shadow);
+	--hover-shadow-button-color: var(--dark-black-shadow);
 	--hover-button-color: var(--blue);
-	--link-color: var(--cyan);
 }
 
 .dark-theme {
-	--bg-color: var(--dark-blue);
-	--color: var(--light-yellow);
-	--bg-header-color: var(--dark-blue);
-	--bg-main-color: var(--blue);
-	--title-color: var(--yellow);
-	--bg-download-color: var(--dark-blue);
-	--download-title-color: var(--yellow);
+	--bg-color: var(--midnight);
+	--color: var(--lemon-chiffon);
+	--bg-header-color: var(--midnight);
+	--bg-main-color: var(--deep-sapphire);
+	--title-color: var(--bright-sun);
+	--bg-download-color: var(--midnight);
+	--download-title-color: var(--bright-sun);
 	--shadow-button-color: var(--lighter-grey);
-	--hover-shadow-button-color: var(--light-grey);
-	--hover-button-color: var(--dark-blue);
+	--hover-shadow-button-color: var(--light-grey-shadow);
+	--hover-button-color: var(--midnight);
 }
 
 @media (prefers-color-scheme: dark) {
 
 	html {
-		--bg-color: var(--dark-blue);
-		--color: var(--light-yellow);
-		--bg-header-color: var(--dark-blue);
-		--bg-main-color: var(--blue);
-		--title-color: var(--yellow);
-		--bg-download-color: var(--dark-blue);
-		--download-title-color: var(--yellow);
+		--bg-color: var(--midnight);
+		--color: var(--lemon-chiffon);
+		--bg-header-color: var(--midnight);
+		--bg-main-color: var(--deep-sapphire);
+		--title-color: var(--bright-sun);
+		--bg-download-color: var(--midnight);
+		--download-title-color: var(--bright-sun);
 		--shadow-button-color: var(--lighter-grey);
-		--hover-shadow-button-color: var(--light-grey);
-		--hover-button-color: var(--dark-blue);
+		--hover-shadow-button-color: var(--light-grey-shadow);
+		--hover-button-color: var(--midnight);
 	}
 }
