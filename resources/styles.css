@@ -150,8 +150,7 @@ header {
 }
 
 .logo .logo-lines,
-.logo .logo-arrow,
-.logo .logo-circle {
+.logo .logo-arrow {
 	transition: transform .25s ease-in-out, fill .25s ease-in-out;
 }
 
@@ -159,22 +158,14 @@ header {
 	fill: var(--yellow)
 }
 
-.logo .logo-arrow,
-.logo-circle {
-	transform-origin: 572px 612px;
-}
-
 .logo .logo-arrow {
+	transform-origin: 572px 612px;
 	transform: rotate(0deg) scale(1);
 }
 
 .logo:hover .logo-arrow {
 	transform: rotate(360deg) scale(1.1);
 	fill: var(--cyan);
-}
-
-.logo:hover .logo-circle {
-	transform: scale(1.1);
 }
 
 .homepage-buttons {
