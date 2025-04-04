@@ -66,7 +66,6 @@ h1 {
 	flex: 1;
 	font-size: 1.5em;
 	margin-block: 0;
-	margin-inline-start: 0;
 	margin-inline-end: 20px;
 	max-block-size: 32px;
 }
@@ -233,7 +232,6 @@ video {
 .download-panel {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 1fr;
 	padding: 0;
 	max-inline-size: 1280px;
 }
@@ -450,7 +448,7 @@ html {
 	--bg-download-color: var(--bright-sun);
 	--shadow-button-color: var(--light-black-shadow);
 	--hover-shadow-button-color: var(--dark-black-shadow);
-	--hover-button-color: var(--blue);
+	--hover-button-color: var(--deep-sapphire);
 }
 
 .dark-theme {
