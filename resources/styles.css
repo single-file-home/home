@@ -425,7 +425,7 @@ html {
 	--deep-sapphire: #083863;
 	--lemon-chiffon: #fef5cc;
 	--buttermilk: #fff2b9;
-	--scotch-mist: #fff8d9;
+	--cornsilk: #fff8d9;
 	--midnight: #011b31;
 	--light-black-shadow: rgba(0, 0, 0, .5);
 	--dark-black-shadow: rgba(0, 0, 0, .25);
@@ -440,7 +440,7 @@ html {
 }
 
 .light-theme {
-	--bg-color: var(--scotch-mist);
+	--bg-color: var(--cornsilk);
 	--color: var(--deep-sapphire);
 	--bg-header-color: var(--deep-sapphire);
 	--bg-main-color: var(--buttermilk);
