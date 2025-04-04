@@ -177,7 +177,7 @@ header {
 }
 
 .dark-theme .theme-switcher-button {
-	transform: rotate(180deg);
+	transform: scaleX(-1);
 }
 
 nav ol,
