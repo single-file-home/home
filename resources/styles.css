@@ -462,7 +462,7 @@ html {
 	--title-color: var(--bright-sun);
 	--bg-download-color: var(--midnight);
 	--download-title-color: var(--bright-sun);
-	--shadow-button-color: var(--lighter-grey);
+	--shadow-button-color: var(--dark-grey-shadow);
 	--hover-shadow-button-color: var(--light-grey-shadow);
 	--hover-button-color: var(--midnight);
 }
@@ -477,7 +477,7 @@ html {
 		--title-color: var(--bright-sun);
 		--bg-download-color: var(--midnight);
 		--download-title-color: var(--bright-sun);
-		--shadow-button-color: var(--lighter-grey);
+		--shadow-button-color: var(--dark-grey-shadow);
 		--hover-shadow-button-color: var(--light-grey-shadow);
 		--hover-button-color: var(--midnight);
 	}
