@@ -181,12 +181,6 @@ header {
 	transform: rotate(180deg);
 }
 
-nav,
-main section p,
-footer {
-	letter-spacing: -.0125em;
-}
-
 nav ol,
 nav ol li::after {
 	margin-inline: 6px;
