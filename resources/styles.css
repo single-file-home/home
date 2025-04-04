@@ -419,14 +419,14 @@ video::-webkit-media-controls-enclosure {
 }
 
 html {
-	--bright-sun: #fedb41;
-	--cerulean: #00acea;
-	--bright-turquoise: #00efd1;
-	--deep-sapphire: #083863;
 	--lemon-chiffon: #fef5cc;
 	--buttermilk: #fff2b9;
 	--cornsilk: #fff8d9;
+	--bright-sun: #fedb41;
+	--cerulean: #00acea;
+	--deep-sapphire: #083863;
 	--midnight: #011b31;
+	--bright-turquoise: #00efd1;
 	--light-black-shadow: rgba(0, 0, 0, .5);
 	--dark-black-shadow: rgba(0, 0, 0, .25);
 	--light-grey-shadow: rgba(128, 128, 128, .5);
