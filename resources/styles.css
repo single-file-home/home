@@ -171,7 +171,6 @@ header {
 .theme-switcher-button {
 	display: none;
 	cursor: pointer;
-	user-select: none;
 	inline-size: 20px;
 	block-size: 20px;
 }
