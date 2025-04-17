@@ -448,6 +448,22 @@ html {
 	--hover-button-color: var(--deep-sapphire);
 }
 
+@media (prefers-color-scheme: dark) {
+
+	html {
+		--bg-color: var(--midnight);
+		--color: var(--lemon-chiffon);
+		--bg-header-color: var(--midnight);
+		--bg-main-color: var(--deep-sapphire);
+		--title-color: var(--bright-sun);
+		--bg-download-color: var(--midnight);
+		--download-title-color: var(--bright-sun);
+		--shadow-button-color: var(--dark-grey-shadow);
+		--hover-shadow-button-color: var(--light-grey-shadow);
+		--hover-button-color: var(--midnight);
+	}
+}
+
 .light-theme {
 	--bg-color: var(--cornsilk);
 	--color: var(--deep-sapphire);
@@ -472,20 +488,4 @@ html {
 	--shadow-button-color: var(--dark-grey-shadow);
 	--hover-shadow-button-color: var(--light-grey-shadow);
 	--hover-button-color: var(--midnight);
-}
-
-@media (prefers-color-scheme: dark) {
-
-	html {
-		--bg-color: var(--midnight);
-		--color: var(--lemon-chiffon);
-		--bg-header-color: var(--midnight);
-		--bg-main-color: var(--deep-sapphire);
-		--title-color: var(--bright-sun);
-		--bg-download-color: var(--midnight);
-		--download-title-color: var(--bright-sun);
-		--shadow-button-color: var(--dark-grey-shadow);
-		--hover-shadow-button-color: var(--light-grey-shadow);
-		--hover-button-color: var(--midnight);
-	}
 }
