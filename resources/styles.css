@@ -377,10 +377,6 @@ video::-webkit-media-controls-enclosure {
 		padding-inline: 0;
 	}
 
-	h3 {
-		color: var(--bg-download-color);
-	}
-
 	footer {
 		margin-block-start: 20px;
 		background-color: var(--bg-color);
@@ -449,7 +445,7 @@ html {
 	--bg-main-color: var(--buttermilk);
 	--title-color: var(--cerulean);
 	--bg-download-color: var(--bright-sun);
-	--download-title-color: var(--deep-sapphire);
+	--download-title-color: var(--cerulean);
 	--shadow-button-color: var(--light-black-shadow);
 	--hover-shadow-button-color: var(--dark-black-shadow);
 	--hover-button-color: var(--deep-sapphire);
