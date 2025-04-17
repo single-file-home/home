@@ -436,6 +436,16 @@ html {
 	--bg-button-color: var(--cerulean);
 	--bg-hover-button-color: var(--bright-turquoise);
 	--link-color: var(--cerulean);
+	--bg-color: var(--cornsilk);
+	--color: var(--deep-sapphire);
+	--bg-header-color: var(--deep-sapphire);
+	--bg-main-color: var(--buttermilk);
+	--title-color: var(--cerulean);
+	--bg-download-color: var(--bright-sun);
+	--download-title-color: var(--cerulean);
+	--shadow-button-color: var(--light-black-shadow);
+	--hover-shadow-button-color: var(--dark-black-shadow);
+	--hover-button-color: var(--deep-sapphire);
 }
 
 .light-theme {
