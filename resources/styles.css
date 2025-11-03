@@ -388,11 +388,6 @@ video::-webkit-media-controls-enclosure {
 	.download-panel {
 		grid-template-columns: repeat(2, 1fr);
 	}
-
-	.download-section:nth-child(3),
-	.download-section:nth-child(4) {
-		grid-template-rows: 5em 1fr;
-	}
 }
 
 @media (max-width: 640px) {
@@ -401,7 +396,8 @@ video::-webkit-media-controls-enclosure {
 		grid-template-columns: 1fr;
 	}
 
-	.download-section:nth-child(2) {
+	.download-section:nth-child(2),
+	.download-section:nth-child(3) {
 		grid-template-rows: 5em 1fr;
 	}
 }
