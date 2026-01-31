@@ -40,96 +40,108 @@
 	<meta name="twitter:url" content="https://www.getsinglefile.com">
 	<link rel="canonical" href="https://www.getsinglefile.com">
 	<script type="application/ld+json">
-		{
-			"@context": "http://schema.org",
-			"@type": "WebSite",
-			"name": "SingleFile",
-			"url": "https://www.getsinglefile.com",
-			"sameAs": [
-				"https://github.com/gildas-lormeau/SingleFile",
-				"https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle",
-				"https://addons.mozilla.org/en-US/firefox/addon/single-file",
-				"https://addons.mozilla.org/android/addon/single-file",
-				"https://microsoftedge.microsoft.com/addons/detail/efnbkdcfmcmnhlkaijjjmhjjgladedno",
-				"https://apps.apple.com/us/app/singlefile-for-safari/id6444322545"
-			],
-			"contributor": {
-				"@type": "Person",
-				"name": "Gildas Lormeau",
-				"email": "gildas.lormeau@gmail.com",
-				"url": "https://github.com/gildas-lormeau"
+	{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+				"@type": "WebSite",
+				"@id": "https://www.getsinglefile.com/#website",
+				"url": "https://www.getsinglefile.com",
+				"name": "SingleFile",
+				"description": "Save an entire web page with all its resources in a single HTML file with SingleFile.",
+				"publisher": {
+					"@id": "https://www.getsinglefile.com/#person"
+					}
+				},
+			{
+				"@type": "SoftwareApplication",
+				"@id": "https://www.getsinglefile.com/#software",
+				"name": "SingleFile",
+				"url": "https://www.getsinglefile.com",
+				"sameAs": [
+					"https://github.com/gildas-lormeau/SingleFile",
+					"https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle",
+					"https://addons.mozilla.org/en-US/firefox/addon/single-file",
+					"https://addons.mozilla.org/android/addon/single-file",
+					"https://microsoftedge.microsoft.com/addons/detail/efnbkdcfmcmnhlkaijjjmhjjgladedno",
+					"https://apps.apple.com/us/app/singlefile-for-safari/id6444322545"
+				],
+				"applicationCategory": "BrowserExtension",
+				"applicationSubCategory": "Productivity",
+				"operatingSystem": "Windows, macOS, Linux, Android, iOS",
+				"author": {
+					"@id": "https://www.getsinglefile.com/#person"
+				},
+				"description": "SingleFile is a browser extension that helps you save an entire web page with all its resources in a single HTML file.",
+				"image": "https://www.getsinglefile.com/resources/logo-256x256.png",
+				"video": {
+					"@type": "VideoObject",
+					"contentUrl": "https://www.getsinglefile.com/resources/demo.mp4",
+					"name": "SingleFile Demo",
+					"description": "How to save a web page in a single HTML file"
+				},
+				"offers": [
+					{
+						"@type": "Offer",
+						"price": "0",
+						"priceCurrency": "USD",
+						"availability": "https://schema.org/InStock",
+						"url": "https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle",
+						"description": "Download on Chrome Web Store"
+					},
+					{
+						"@type": "Offer",
+						"price": "0",
+						"priceCurrency": "USD",
+						"availability": "https://schema.org/InStock",
+						"url": "https://addons.mozilla.org/en-US/firefox/addon/single-file",
+						"description": "Download on Firefox Add-ons"
+					},
+					{
+						"@type": "Offer",
+						"price": "0",
+						"priceCurrency": "USD",
+						"availability": "https://schema.org/InStock",
+						"url": "https://addons.mozilla.org/android/addon/single-file",
+						"description": "Download on Firefox for Android Add-ons"
+					},
+					{
+						"@type": "Offer",
+						"price": "0",
+						"priceCurrency": "USD",
+						"availability": "https://schema.org/InStock",
+						"url": "https://microsoftedge.microsoft.com/addons/detail/efnbkdcfmcmnhlkaijjjmhjjgladedno",
+						"description": "Download on Microsoft Edge Add-ons"
+					},
+					{
+						"@type": "Offer",
+						"price": "0",
+						"priceCurrency": "USD",
+						"availability": "https://schema.org/InStock",
+						"url": "https://apps.apple.com/us/app/singlefile-for-safari/id6444322545",
+						"description": "Download on Mac App Store (iOS)"
+					},
+					{
+						"@type": "Offer",
+						"price": "0",
+						"priceCurrency": "USD",
+						"availability": "https://schema.org/InStock",
+						"url": "https://apps.apple.com/us/app/singlefile-for-safari/id6444322545?platform=mac",
+						"description": "Download on Mac App Store (macOS)"
+					}
+				]
 			},
-			"description": "Save an entire web page with all its resources in a single HTML file with SingleFile.",
-			"thumbnailUrl": "https://www.getsinglefile.com/resources/logo-256x256.png",
-			"video": "https://www.getsinglefile.com/resources/demo.mp4",
-			"text": "SingleFile is a browser extension that helps you save an entire web page with all its resources in a single HTML file. The saved page can be displayed offline in any browser without needing to install any extension."
-		}
-	</script>
-	<script type="application/ld+json">
-		{
-			"@context": "https://schema.org",
-			"@type": "SoftwareApplication",
-			"name": "SingleFile",
-			"operatingSystem": "Windows, macOS, Linux",
-			"applicationCategory": "BrowserExtension",
-			"applicationSubCategory": "Productivity",
-			"author": {
+			{
 				"@type": "Person",
+				"@id": "https://www.getsinglefile.com/#person",
 				"name": "Gildas Lormeau",
-				"email": "gildas.lormeau@gmail.com",
-				"url": "https://github.com/gildas-lormeau"
-			},
-			"offers": [
-			  {
-				"@type": "Offer",
-				"price": "0",
-				"priceCurrency": "USD",
-				"availability": "https://schema.org/InStock",
-				"url": "https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle",
-				"description": "Download on Chrome Web Store"
-			  },
-			  {
-				"@type": "Offer",
-				"price": "0",
-				"priceCurrency": "USD",
-				"availability": "https://schema.org/InStock",
-				"url": "https://addons.mozilla.org/en-US/firefox/addon/single-file",
-				"description": "Download on Firefox Add-ons"
-			  },
-			  {
-				"@type": "Offer",
-				"price": "0",
-				"priceCurrency": "USD",
-				"availability": "https://schema.org/InStock",
-				"url": "https://addons.mozilla.org/android/addon/single-file",
-				"description": "Download on Firefox for Android Add-ons"
-			  },
-			  {
-				"@type": "Offer",
-				"price": "0",
-				"priceCurrency": "USD",
-				"availability": "https://schema.org/InStock",
-				"url": "https://microsoftedge.microsoft.com/addons/detail/efnbkdcfmcmnhlkaijjjmhjjgladedno",
-				"description": "Download on Microsoft Edge Add-ons"
-			  },
-			  {
-				"@type": "Offer",
-				"price": "0",
-				"priceCurrency": "USD",
-				"availability": "https://schema.org/InStock",
-				"url": "https://apps.apple.com/us/app/singlefile-for-safari/id6444322545",
-				"description": "Download on Mac App Store (iOS)"
-			  },
-			  {
-				"@type": "Offer",
-				"price": "0",
-				"priceCurrency": "USD",
-				"availability": "https://schema.org/InStock",
-				"url": "https://apps.apple.com/us/app/singlefile-for-safari/id6444322545?platform=mac",
-				"description": "Download on Mac App Store (macOS)"
-			  }
-			]
-		  }
+				"url": "https://github.com/gildas-lormeau",
+				"sameAs": [
+					"https://github.com/gildas-lormeau"
+				]
+			}
+		]
+	}
 	</script>
 </head>
 
