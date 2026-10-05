@@ -264,7 +264,6 @@ main section > h3 {
 	box-sizing: border-box;
 	background-color: var(--bg-listing-color);
 	overflow-x: auto;
-	border: 1px solid var(--section-separator-color);
 	box-shadow: 5px 5px 0 var(--shadow-button-color);
 }
 
