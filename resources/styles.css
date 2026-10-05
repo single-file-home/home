@@ -268,6 +268,10 @@ main section > h3 {
 	box-shadow: 5px 5px 0 var(--shadow-button-color);
 }
 
+.example .listing-link {
+	text-decoration: none;
+}
+
 .example figcaption {
 	font-size: .8em;
 	line-height: 1.4em;
