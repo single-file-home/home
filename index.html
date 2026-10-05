@@ -12,13 +12,14 @@
 	<link rel="preload" href="resources/script.js" as="script" type="text/javascript">
 	<link rel="preload" href="https://api.github.com/repos/gildas-lormeau/SingleFile" as="fetch" type="application/json"
 		crossorigin>
+	<script src="resources/theme.js"></script>
 	<link rel="stylesheet" href="resources/styles.css">
 	<link rel="icon" href="resources/logo.svg" type="image/svg+xml">
 	<link rel="icon" href="resources/logo-32x32.png" type="image/png" sizes="32x32">
 	<link rel="icon" href="resources/logo-48x48.png" type="image/png" sizes="48x48">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description"
-		content="Save an entire web page with all its resources in a single HTML file with SingleFile.">
+		content="Save an entire web page with all its resources in a single HTML file with SingleFile. The saved page works offline in any browser and can be annotated.">
 	<meta name="robots" content="index, follow">
 	<meta name="author" content="Gildas Lormeau">
 	<meta name="keywords"
@@ -27,16 +28,18 @@
 	<meta property="og:title" content="SingleFile – Effortlessly Save and Preserve Web Pages">
 	<meta property="og:description"
 		content="Save an entire web page with all its resources in a single HTML file with SingleFile.">
-	<meta property="og:image" content="https://www.getsinglefile.com/resources/logo-256x256.png">
+	<meta property="og:image" content="https://www.getsinglefile.com/resources/banner-1200x630.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
 	<meta property="og:url" content="https://www.getsinglefile.com">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="SingleFile">
 	<meta property="og:locale" content="en_US">
-	<meta name="twitter:card" content="summary">
+	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="SingleFile – Effortlessly Save and Preserve Web Pages">
 	<meta name="twitter:description"
 		content="Save an entire web page with all its resources in a single HTML file with SingleFile.">
-	<meta name="twitter:image" content="https://www.getsinglefile.com/resources/logo-256x256.png">
+	<meta name="twitter:image" content="https://www.getsinglefile.com/resources/banner-1200x630.png">
 	<meta name="twitter:url" content="https://www.getsinglefile.com">
 	<link rel="canonical" href="https://www.getsinglefile.com">
 	<script type="application/ld+json">
@@ -79,8 +82,8 @@
 					"contentUrl": "https://www.getsinglefile.com/resources/demo.mp4",
 					"name": "SingleFile Demo",
 					"description": "How to save a web page in a single HTML file",
-					"uploadDate": "2020-01-01T00:00:00Z",
-					"thumbnailUrl": "https://www.getsinglefile.com/resources/logo-256x256.png"
+					"uploadDate": "2025-03-20T00:00:00Z",
+					"thumbnailUrl": "https://www.getsinglefile.com/resources/demo-poster.jpg"
 				},
 				"offers": [
 					{
@@ -121,7 +124,7 @@
 						"priceCurrency": "USD",
 						"availability": "https://schema.org/InStock",
 						"url": "https://apps.apple.com/us/app/singlefile-for-safari/id6444322545",
-						"description": "Download on Mac App Store (iOS)"
+						"description": "Download on App Store (iOS)"
 					},
 					{
 						"@type": "Offer",
@@ -190,9 +193,11 @@
 		<nav>
 			<ol>
 				<li><a href="#introduction">Introduction</a></li>
-				<li><a href="#demo">Demo</a></li>
-				<li><a href="#features">Features</a></li>
 				<li><a href="#download">Download</a></li>
+				<li><a href="#examples">Examples</a></li>
+				<li><a href="#demo">Demo</a></li>
+				<li><a href="#formats">Formats</a></li>
+				<li><a href="#features">Features</a></li>
 				<li><a href="#cli">SingleFile CLI</a></li>
 				<li><a href="#more-information">More information</a></li>
 			</ol>
@@ -204,43 +209,22 @@
 				resources (e.g., images, stylesheets, fonts, frames, etc.), as a single HTML file with just one click.
 			</p>
 			<p>
-				The saved page can be displayed offline in any browser without needing to install any
-				extension. Ideal for researchers, students, and professionals needing reliable offline copies of web
-				pages, or for anyone wanting to keep a record of their favorite web content.
+				The saved page is a standard HTML file. It can be displayed offline in any browser, today or in twenty
+				years, without needing to install any extension. It stays on your computer: no account, no cloud
+				service, and nothing is sent anywhere.
+			</p>
+			<p>
+				Ideal for researchers, students, and professionals needing reliable offline copies of web pages, or
+				for anyone wanting to keep a record of their favorite web content.
 			</p>
 			<p>
 				SingleFile is available for Chrome, Edge, Firefox, and Safari. It is free and open source.
 			</p>
 		</section>
-		<section id="demo">
-			<h2><a href="#demo">#</a> Demo</h2>
-			<video controls poster="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" width="882"
-				height="588" preload="none" aria-label="Demo video of SingleFile">
-				<source src="resources/demo.mp4" type="video/mp4">
-				Your browser doesn't support HTML video. Here is a <a href="resources/demo.mp4" download>link to the
-					video</a> instead.
-			</video>
-		</section>
-		<section id="features">
-			<h2><a href="#features">#</a> Features</h2>
-			<ul>
-				<li>Save current tab, all tabs or selected tabs</li>
-				<li>Save a selection of content</li>
-				<li>Annotate saved pages</li>
-				<li>Auto-save pages</li>
-				<li>Batch save a list of URLs</li>
-				<li>Save bookmarked pages</li>
-				<li>Save pages to GitHub, Amazon S3, Google Drive, or a WebDAV server</li>
-				<li>Save pages as self-extracting ZIP files</li>
-				<li>Load deferred images and iframes before saving a page</li>
-				<li>Save option set as profile</li>
-				<li>Automatically select a profile when saving a page depending on the URL</li>
-				<li>Execute a user script when saving a page</li>
-				<li>And more...</li>
-			</ul>
-		</section>
 		<section id="download">
 			<h2><a href="#download">#</a> Download</h2>
+			<p class="latest-release" hidden>Latest version: <a href="https://github.com/gildas-lormeau/SingleFile/releases/latest"
+					target="_blank" rel="noopener"></a></p>
 			<ul class="download-panel">
 				<li class="download-section">
 					<h3>Firefox</h3>
@@ -270,12 +254,159 @@
 				</li>
 			</ul>
 		</section>
+		<section id="examples">
+			<h2><a href="#examples">#</a> Examples</h2>
+			<p>
+				The examples below are the Wikipedia article on the data URI scheme, saved with SingleFile. Click an
+				image or a link to open the saved file in your browser. Each file is self-contained: download it,
+				disconnect from the network, and open it from your disk. It displays exactly the same. Text and
+				images from <a href="https://en.wikipedia.org/wiki/Data_URI_scheme" target="_blank"
+					rel="noopener">Wikipedia</a>, CC BY-SA 4.0.
+			</p>
+			<h3>Saved as HTML</h3>
+			<p>
+				One 350 KB file. The images, stylesheets and fonts are embedded in the HTML, so nothing else is
+				needed to display the page.
+			</p>
+			<figure class="example">
+				<a href="resources/example.html" target="_blank" rel="noopener">
+					<img src="resources/example-screenshot.jpg" width="1200" height="760" loading="lazy"
+						alt="The Wikipedia article on the data URI scheme, saved with SingleFile and opened from disk">
+				</a>
+				<figcaption><a href="resources/example.html" target="_blank" rel="noopener">example.html</a> (350 KB)</figcaption>
+			</figure>
+			<h3>Saved as a self-extracting ZIP</h3>
+			<p>
+				The same page as a 189 KB file. It is a ZIP archive that is also an HTML page: opened in a browser, it
+				unpacks itself and displays the page; opened with a ZIP tool, it gives back the page and its
+				resources as separate files.
+			</p>
+			<figure class="example">
+				<pre class="listing">$ unzip -l example.zip.html
+  Length      Name
+---------  ----
+   150399  index.html
+     2845  manifest.json
+      449  stylesheet_0.css
+    66659  stylesheet_1.css
+      305  images/0.svg
+      641  images/1.svg
+      ...
+    14576  images/15.svg
+---------  -------
+   319592  19 files</pre>
+				<figcaption><a href="resources/example.zip.html" target="_blank" rel="noopener">example.zip.html</a> (189 KB)</figcaption>
+			</figure>
+			<h3>Annotated</h3>
+			<p>
+				The same page after a pass in the SingleFile editor: two sentences highlighted, two notes added, and
+				the appearance panel removed. The editor opens any saved page, and the annotations are saved in the
+				HTML file itself.
+			</p>
+			<figure class="example">
+				<a href="resources/example-annotated.html" target="_blank" rel="noopener">
+					<img src="resources/example-annotated-screenshot.jpg" width="1200" height="760" loading="lazy"
+						alt="The same saved article with two highlighted sentences and two sticky notes added in the SingleFile editor">
+				</a>
+				<figcaption><a href="resources/example-annotated.html" target="_blank" rel="noopener">example-annotated.html</a> (379 KB)</figcaption>
+			</figure>
+		</section>
+		<section id="demo">
+			<h2><a href="#demo">#</a> Demo</h2>
+			<figure class="example">
+				<video controls poster="resources/demo-poster.jpg" width="882" height="588" preload="none"
+					aria-label="Demo video of SingleFile">
+					<source src="resources/demo.mp4" type="video/mp4">
+					Your browser doesn't support HTML video. Here is a <a href="resources/demo.mp4" download>link to the
+						video</a> instead.
+				</video>
+				<figcaption>
+					The video (1 min 22 s) shows a page being saved with one click, then the saved file opened from
+					disk, offline.
+				</figcaption>
+			</figure>
+		</section>
+		<section id="formats">
+			<h2><a href="#formats">#</a> Why not "Save as"?</h2>
+			<p>
+				Browsers can save a page too, but the result is a folder of files, an MHTML file that only some
+				browsers open, or a Webarchive that only Safari opens. SingleFile produces one HTML file, in one of
+				two formats: plain HTML, where images and fonts are embedded as text, or a self-extracting ZIP, an
+				HTML file that carries the page resources compressed and unpacks itself when opened. Both open in
+				any browser.
+			</p>
+			<div class="format-table-container">
+			<table class="format-table">
+				<thead>
+					<tr>
+						<th></th>
+						<th>SingleFile HTML</th>
+						<th>SingleFile self-extracting ZIP</th>
+						<th>MHTML</th>
+						<th>Webarchive</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Opens in any browser</th>
+						<td>✓</td>
+						<td>✓</td>
+						<td>Chromium only</td>
+						<td>Safari only</td>
+					</tr>
+					<tr>
+						<th>Works without JavaScript</th>
+						<td>✓</td>
+						<td></td>
+						<td>✓</td>
+						<td>✓</td>
+					</tr>
+					<tr>
+						<th>Unused styles removed</th>
+						<td>✓</td>
+						<td>✓</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Compressed</th>
+						<td></td>
+						<td>✓</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<p>
+				See the <a href="https://github.com/gildas-lormeau/SingleFile/blob/master/README.MD#file-format-comparison"
+					target="_blank" rel="noopener">full comparison</a> in the README.
+			</p>
+		</section>
+		<section id="features">
+			<h2><a href="#features">#</a> Features</h2>
+			<ul>
+				<li>Save current tab, all tabs or selected tabs</li>
+				<li>Save a selection of content</li>
+				<li>Annotate saved pages</li>
+				<li>Auto-save pages</li>
+				<li>Batch save a list of URLs</li>
+				<li>Save bookmarked pages</li>
+				<li>Save pages to GitHub, Amazon S3, Google Drive, or a WebDAV server</li>
+				<li>Save pages as self-extracting ZIP files</li>
+				<li>Load deferred images and iframes before saving a page</li>
+				<li>Save option set as profile</li>
+				<li>Automatically select a profile when saving a page depending on the URL</li>
+				<li>Execute a user script when saving a page</li>
+				<li>And more...</li>
+			</ul>
+		</section>
 		<section id="cli">
 			<h2><a href="#cli">#</a> SingleFile CLI</h2>
 			<p>
 				SingleFile CLI (Command Line Interface) is a command-line tool that allows you to save a web page with
 				all its resources in a single HTML file. It is based on the same core as the browser extension but can
-				be used without neeeding to install a browser extension or launching manually a browser.
+				be used without needing to install a browser extension or manually launching a browser.
 			</p>
 			<p>
 				SingleFile CLI is available for Windows, macOS, and Linux. See here for more information: <a
@@ -286,16 +417,20 @@
 		<section id="more-information">
 			<h2><a href="#more-information">#</a> More information</h2>
 			<p>
-				<a href="https://github.com/gildas-lormeau/SingleFile/blob/master/README.MD" target="_blank"
-					rel="noopener">See the README file</a> to read the FAQ, the list of known issues and troubleshooting
-				tips, the privacy policy, the list of contributors, and more.
+				Read the <a href="https://github.com/gildas-lormeau/SingleFile/blob/master/faq.md" target="_blank"
+					rel="noopener">FAQ</a> for the most common questions, the <a
+					href="https://github.com/gildas-lormeau/SingleFile/wiki" target="_blank" rel="noopener">wiki</a>
+				for guides such as running a user script before a page is saved, and the <a
+					href="https://github.com/gildas-lormeau/SingleFile/blob/master/README.MD" target="_blank"
+					rel="noopener">README</a> for the known issues, troubleshooting tips, the privacy policy, the list of
+				contributors, and more.
 			</p>
 		</section>
 	</main>
 	<footer>
 		SingleFile is developed by <a href="https://github.com/gildas-lormeau" target="_blank" rel="noopener">Gildas
-			Lormeau</a> (gildas.lormeau@gmail.com). The source code is under the AGPL License and is available on <a
-			href="https://github.com/gildas-lormeau/SingleFile" target="_blank">GitHub</a>.
+			Lormeau</a>. The source code is under the AGPL License and is available on <a
+			href="https://github.com/gildas-lormeau/SingleFile" target="_blank" rel="noopener">GitHub</a>.
 	</footer>
 </body>
 
