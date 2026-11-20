@@ -221,9 +221,8 @@ main section:not(:last-of-type):after {
 video {
 	inline-size: 100%;
 	block-size: auto;
-	max-inline-size: 882px;
-	max-block-size: 588px;
-	aspect-ratio: 882 / 588;
+	max-inline-size: 1120px;
+	aspect-ratio: 16 / 9;
 	object-fit: cover;
 }
 
@@ -253,6 +252,10 @@ main section > h3 {
 	max-inline-size: 882px;
 	block-size: auto;
 	box-shadow: 5px 5px 0 var(--shadow-button-color);
+}
+
+.example video {
+	max-inline-size: 1120px;
 }
 
 .example .listing {

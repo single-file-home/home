@@ -81,8 +81,9 @@
 					"@type": "VideoObject",
 					"contentUrl": "https://www.getsinglefile.com/resources/demo.mp4",
 					"name": "SingleFile Demo",
-					"description": "How to save a web page in a single HTML file",
-					"uploadDate": "2025-03-20T00:00:00Z",
+					"description": "How to save a web page in a single HTML file, open it offline, save a selection and annotate a page",
+					"uploadDate": "2026-11-20T00:00:00Z",
+					"duration": "PT1M20S",
 					"thumbnailUrl": "https://www.getsinglefile.com/resources/demo-poster.jpg"
 				},
 				"offers": [
@@ -193,9 +194,9 @@
 		<nav>
 			<ol>
 				<li><a href="#introduction">Introduction</a></li>
+				<li><a href="#demo">Demo</a></li>
 				<li><a href="#download">Download</a></li>
 				<li><a href="#examples">Examples</a></li>
-				<li><a href="#demo">Demo</a></li>
 				<li><a href="#formats">Formats</a></li>
 				<li><a href="#features">Features</a></li>
 				<li><a href="#cli">SingleFile CLI</a></li>
@@ -220,6 +221,22 @@
 			<p>
 				SingleFile is available for Chrome, Edge, Firefox, and Safari. It is free and open source.
 			</p>
+		</section>
+		<section id="demo">
+			<h2><a href="#demo">#</a> Demo</h2>
+			<figure class="example">
+				<video controls poster="resources/demo-poster.jpg" width="1920" height="1080" preload="none"
+					aria-label="Demo video of SingleFile">
+					<source src="resources/demo.mp4" type="video/mp4">
+					Your browser doesn't support HTML video. Here is a <a href="resources/demo.mp4" download>link to the
+						video</a> instead.
+				</video>
+				<figcaption>
+					The video (1 min 20 s, no sound) shows how to save a page with one click, open the saved file
+					offline, save only a selection, and annotate a page before saving it. It ends with a quick tour
+					of other <a href="#features">features</a>.
+				</figcaption>
+			</figure>
 		</section>
 		<section id="download">
 			<h2><a href="#download">#</a> Download</h2>
@@ -319,21 +336,6 @@
 						download>example-annotated.html</a></figcaption>
 			</figure>
 		</section>
-		<section id="demo">
-			<h2><a href="#demo">#</a> Demo</h2>
-			<figure class="example">
-				<video controls poster="resources/demo-poster.jpg" width="882" height="588" preload="none"
-					aria-label="Demo video of SingleFile">
-					<source src="resources/demo.mp4" type="video/mp4">
-					Your browser doesn't support HTML video. Here is a <a href="resources/demo.mp4" download>link to the
-						video</a> instead.
-				</video>
-				<figcaption>
-					The video (1 min 22 s) shows a page being saved with one click, then the saved file opened from
-					disk, offline.
-				</figcaption>
-			</figure>
-		</section>
 		<section id="formats">
 			<h2><a href="#formats">#</a> Why not "Save as"?</h2>
 			<p>
@@ -396,13 +398,17 @@
 			<h2><a href="#features">#</a> Features</h2>
 			<ul>
 				<li>Save current tab, all tabs or selected tabs</li>
+				<li>Save several tabs in one archive</li>
 				<li>Save a selection of content</li>
 				<li>Annotate saved pages</li>
+				<li>Remove unwanted elements or switch to reader mode before saving a page</li>
 				<li>Auto-save pages</li>
 				<li>Batch save a list of URLs</li>
 				<li>Save bookmarked pages</li>
 				<li>Save pages to GitHub, Amazon S3, Google Drive, or a WebDAV server</li>
 				<li>Save pages as self-extracting ZIP files</li>
+				<li>Protect self-extracting ZIP files with a password</li>
+				<li>Display an infobar with the source and the date when viewing a saved page</li>
 				<li>Load deferred images and iframes before saving a page</li>
 				<li>Save option set as profile</li>
 				<li>Automatically select a profile when saving a page depending on the URL</li>
